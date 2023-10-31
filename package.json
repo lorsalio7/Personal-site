@@ -1,0 +1,16 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "This is my site",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d _site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://lorsalio7.github.io/Personal-site",
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}

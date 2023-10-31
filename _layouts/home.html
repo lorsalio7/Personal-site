@@ -1,0 +1,53 @@
+{% include /top-index.html %}
+  <body>
+    {% include /header.html %}
+    <main class="main">
+      <h1 class="visually-hidden">Сергей Закиров - верстальщик сайтов</h1>
+      <section class="about">
+        <div class="container about__container">
+          <div class="about__content">
+            <h2 class="visually-hidden">Обо мне</h2>
+            <img class="about__image" src="img/avatar.svg" width="142" height="142" alt="Аватар Сергея">
+            <p class="about__heading">Здравствуйте! Меня зовут Сергей, я занимаюсь версткой сайтов</p>
+            <p class="about__description">Здесь вы можете ознакомиться с моими проектами, узнать о моих навыках. Я стараюсь создавать не только адаптивные, но и функциональные сайты. Если после ознакомления моего портфолио у вас появятся вопросы или предложения, я буду рад ответить на них.</p>
+
+{% include /socials-about.html %}
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="container portfolio__container">
+          <h2 class="portfolio__title">Последние работы</h2>
+          <div class="portfolio__list">
+            {% for post in site.posts limit: 2 offset: 0 %}
+            {% include /small-post.html %}
+            {% endfor %}
+          </div>
+          <div class="portfolio__button">
+            <a class="button" href="/projects" title="Все работы">Все работы</a>
+          </div>
+        </div>
+      </section>
+      <section class="technology">
+        <h2 class="visually-hidden">Технологие используемые мной в работе</h2>
+        <div class="container technology__container">
+          <div class="swiper-container technology__slider technology-slider">
+            <div class="swiper-wrapper technology-slider__wrapper">
+              {% include /technology-slides.html %}
+            </div>
+          </div>
+          <button class="swiper-button-prev technology-slider__prev-button" type="button">
+            <img src="img/left-arrow.svg" width="22" height="15" alt="left arrow">
+          </button>
+          <button class="swiper-button-next technology-slider__next-button" type="button">
+            <img src="img/right-arrow.svg" width="22" height="15" alt="right arrow">
+          </button>
+        </div>
+      </section>
+    </main>
+    {% include /footer.html %}
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

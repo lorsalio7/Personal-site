@@ -1,0 +1,60 @@
+title: Сайт-Портфолио Сергея Закирова, верстальщик сайтов
+description: На этом сайте вы можете ознакомится со списком моих выполненных работ. Стараюсь выполнять свою работу качественно, чтобы помочь бизнесу достичь успеха в сети Интернет
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://sezak.ru" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+socials:
+  telegram: https://t.me/sezak74
+  vk: https://vk.com/id614911269
+  github: https://github.com/lorsalio7
+  email: # "email-link"
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate]
+
+
+imagehome: "img/imagehome.jpg"
+
+
+# enabled: true
+paginate_path: "/projects/pages/page:num/"
+paginate: 3
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+
+# {% else %}
+# <a class="button button--disabled portfolio__button">Назад</a>
+
+# {% else %}
+# <a class="button button--disabled portfolio__button">Вперед</a>
+
+lang: ru_RU
+
+exclude:
+  - gulpfile.js
+  - package-lock.json
+  - package.json
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md

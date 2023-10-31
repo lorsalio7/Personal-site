@@ -1,0 +1,15 @@
+<article class="portfolio__item portfolio-card">
+  <picture>
+    <source srcset="{{ post.images.smallpost-webp }}" type="image/webp">
+    <img class="portfolio-card__image" loading="lazy" src="{{ post.images.smallpost-jpg }}" width="436" height="244" alt="Верстка интернет-магазина Котофей">
+  </picture>
+  <div class="portfolio-card__text-content">
+    <h3 class="portfolio-card__title">
+      <a class="portfolio-card__link" href="{{ post.url }}">{{ post.title }}</a>
+    </h3>
+    <p class="portfolio-card__info">
+      <span class="portfolio-card__tag">#{{ post.tag }} /</span>
+      <time class="portfolio-card__time" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d' }}.{{ post.date | date: '%m' }}.{{ post.date | date: '%Y' }}</time>
+    </p>
+  </div>
+</article>

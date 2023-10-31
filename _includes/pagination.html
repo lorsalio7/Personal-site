@@ -1,0 +1,12 @@
+<div class="portfolio__buttons">
+  {% if paginator.previous_page %}
+    <a class="button portfolio__button" href="{{ paginator.previous_page_path | relative_url}}" title="Назад">Назад</a>
+  
+  {% endif %}
+  {% if paginator.next_page %}
+    <a class="button portfolio__button" href="{{ paginator.next_page_path | relative_url}}" title="Вперед">Вперед</a>
+  
+  {% endif %}
+</div>
+
+

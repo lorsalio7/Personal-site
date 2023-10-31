@@ -1,0 +1,36 @@
+<section class="prev-next">
+  <h2 class="visually-hidden">Другие работы</h2>
+  <div class="container prev-next__container">
+    {% if page.next.url %}
+    <article class="prev-next__article">
+      <div class="prev-next__image-wrapper">
+        <picture>
+          <source srcset="{{ page.next.images.thumb-webp }}" type="image/webp">
+          <img class="prev-next__image" loading="lazy" src="{{ page.next.images.thumb-jpg }}" width="248" height="140" alt="{{ page.next.title }}">
+        </picture>
+      </div>
+      <div class="prev-next__text">
+        <span class="prev-next__indicator">предыдущий проект</span>
+        <h3 class="prev-next__title">
+          <a class="prev-next__link" href="{{ page.next.url }}">{{ page.next.title }}</a>
+        </h3>
+      </div>
+    </article>
+    {% endif %}
+    {% if page.previous.url %}
+    <article class="prev-next__article prev-next__article--reverse">
+      <div class="prev-next__image-wrapper">
+        <picture>
+          <source srcset="{{ page.previous.images.thumb-webp }}" type="image/webp"><img class="prev-next__image" loading="lazy" src="{{ page.previous.images.thumb-jpg }}" width="248" height="140" alt="{{ page.previous.title }}">
+        </picture>
+      </div>
+      <div class="prev-next__text">
+        <span class="prev-next__indicator">следующий проект</span>
+        <h3 class="prev-next__title">
+          <a class="prev-next__link" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+        </h3>
+      </div>
+    </article>
+    {% endif %}
+  </div>
+</section>

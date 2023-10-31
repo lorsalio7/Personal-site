@@ -1,0 +1,29 @@
+{% include /top-page.html %}
+  <body>
+    {% include /header.html %}
+    <main class="main">
+      <div class="container container--article">
+        <article class="full-article">
+          <header class="full-article__header">
+            <h1 class="full-article__title">{{ page.title }}</h1>
+            <p class="full-article__info">
+              <span class="full-article__tag">#{{ page.tag }} /</span>
+              <time class="full-article__time" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d' }}.{{ page.date | date: '%m' }}.{{ page.date | date: '%Y' }}</time>
+            </p>
+          </header>
+          <picture>
+            <source srcset="{{ page.images.fullpost-webp }}" type="image/webp"><img class="full-article__image" loading="lazy" src="{{ page.images.fullpost-jpg }}" width="968" height="544" alt="{{ page.title }}">
+          </picture>
+          <div class="raw-content">
+            {{ content }}
+            <blockquote>ВНИМАНИЕ! Все проекты представленные на данном сайте предназначены исключительно для ознакомления. Использование в коммерческих или любых других целях строго ЗАПРЕЩЕНО.</blockquote>
+          </div>
+        </article>
+      </div>
+      {% include /prev-next.html %}
+    </main>
+    {% include /footer.html %}
+    <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
