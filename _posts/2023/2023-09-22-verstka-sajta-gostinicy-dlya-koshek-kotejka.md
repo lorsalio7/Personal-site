@@ -50,6 +50,6 @@ images:
 <h2>Используемые плагины:</h2>
 
 <ul>
-  <li><a href="https://github.com/cferdinandi/smooth-scroll" rel="nofollow">Cleave.js</a> - библиотека для форматирования данных в input. Автор - Max Huang</li>
-  <li><a href="https://masonry.desandro.com/" rel="nofollow">Splide.js</a> - библиотека слайдера. Автор - Naotoshi Fujita</li>
+  <li><a href="https://nosir.github.io/cleave.js/" rel="nofollow">Cleave.js</a> - библиотека для форматирования данных в input. Автор - Max Huang</li>
+  <li><a href="https://splidejs.com/" rel="nofollow">Splide.js</a> - библиотека слайдера. Автор - Naotoshi Fujita</li>
 </ul>
