@@ -23,7 +23,7 @@ imagehome: "img/imagehome.jpg"
 
 # enabled: true
 paginate_path: "/projects/pages/page:num/"
-paginate: 3
+paginate: 6
 
 
 # Exclude from processing.
