@@ -1624,6 +1624,11 @@ body {
   }
 
   .main-footer__copyright {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .main-footer__credits {
     margin-bottom: 20px;
     text-align: center;
   }
@@ -1832,64 +1837,28 @@ body {
 }
 
 @media (hover: hover) {
-  .socials__link:focus {
-    fill: var(--accent-color);
-  }
-
   .socials__link:hover {
     fill: var(--accent-color);
-  }
-
-  .portfolio-card__link:focus {
-    background-size: 100% 3px;
   }
 
   .portfolio-card__link:hover {
     background-size: 100% 3px;
   }
 
-  .main-footer__link:focus {
-    opacity: 0.6;
-  }
-
   .main-footer__link:hover {
     opacity: 0.6;
-  }
-
-  .raw-content ul a:focus {
-    color: var(--paragraph-color);
   }
 
   .raw-content ul a:hover {
     color: var(--paragraph-color);
   }
 
-  .raw-content p a:focus {
-    color: var(--accent-color);
-  }
-
   .raw-content p a:hover {
     color: var(--accent-color);
   }
 
-  .prev-next__link:focus {
-    background-size: 100% 3px;
-  }
-
   .prev-next__link:hover {
     background-size: 100% 3px;
-  }
-
-  .button:focus {
-    color: var(--hover-button-text-color);
-  }
-
-  .button:focus::before {
-    height: 0;
-  }
-
-  .button:focus > .button__icon {
-    fill: var(--hover-button-text-color);
   }
 
   .button:hover {
@@ -1902,14 +1871,6 @@ body {
 
   .button:hover > .button__icon {
     fill: var(--hover-button-text-color);
-  }
-
-  .button--disabled:focus {
-    color: var(--button-text-color);
-  }
-
-  .button--disabled:focus::before {
-    height: 100%;
   }
 
   .button--disabled:hover {
