@@ -30,6 +30,7 @@ images:
 <h2>Используемые плагины:</h2>
 
 <ul>
+  <li><a href="https://github.com/WICG/focus-visible/" rel="nofollow">focus-visible</a> - Полифил :focus-visible. Автор - Web Incubator CG</li>
   <li><a href="https://michalsnik.github.io/aos/" rel="nofollow">AOS.js</a> - библиотека анимаций по скроллу. Автор - Michał Sajnóg</li>
   <li><a href="https://github.com/cferdinandi/smooth-scroll" rel="nofollow">Smooth Scroll</a> - библиотека плавного скролла по клику на ссылки с якорями. Автор - Chris Ferdinandi</li>
   <li><a href="https://swiperjs.com/" rel="nofollow">Swiper</a> - библиотека слайдера. Автор - Vladimir Kharlampidi</li>
