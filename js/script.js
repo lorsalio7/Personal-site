@@ -66,4 +66,10 @@ if (prevNextContainer) {
   if (prevNextContainer.children.length === 1 && prevNextReverse) {
     prevNextReverse.style.borderBottom = "none";
   }
+}
+
+var footerYear = document.querySelector(".main-footer__year");
+
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
 } // =================================================
