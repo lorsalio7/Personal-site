@@ -21,6 +21,14 @@ images:
 
 <img src="images/2024/2024-05-17-verstka-landing-page-tsentra-yogi-lotos/2.jpg">
 
+<div class="full-article__button">
+  <a class="button" rel="nofollow noreferrer noopener" target="_blank" href="https://lorsalio7.github.io/Lotos-Yoga/dist/">Посмотреть
+    <svg class="button__icon button__icon--right" width="22" height="22">
+      <use xlink:href="img/sprite.svg#new-tab-ic"></use>
+    </svg>
+  </a>
+</div>
+
 <h2>Используемые плагины и библиотеки:</h2>
 
 <ul>
