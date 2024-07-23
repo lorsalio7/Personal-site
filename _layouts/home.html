@@ -31,23 +31,20 @@
       <section class="technology">
         <h2 class="visually-hidden">Технологие используемые мной в работе</h2>
         <div class="container technology__container">
-          <div class="swiper-container technology__slider technology-slider">
-            <div class="swiper-wrapper technology-slider__wrapper">
-              {% include /technology-slides.html %}
+          <div class="splide technology__slider technology-slider">
+            <div class="splide__track technology-slider__wrapper">
+              <ul class="splide__list">
+                {% include /technology-slides.html %}
+              </ul>
             </div>
           </div>
-          <button class="swiper-button-prev technology-slider__prev-button" type="button">
-            <img src="img/left-arrow.svg" width="22" height="15" alt="left arrow">
-          </button>
-          <button class="swiper-button-next technology-slider__next-button" type="button">
-            <img src="img/right-arrow.svg" width="22" height="15" alt="right arrow">
-          </button>
         </div>
       </section>
     </main>
     {% include /footer.html %}
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/splide.min.js" defer></script>
+    <script src="js/splide-extension-auto-scroll.min.js" defer></script>
     <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js" defer></script>
   </body>
 </html>

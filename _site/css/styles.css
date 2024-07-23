@@ -797,151 +797,28 @@ body {
 }
 
 .technology__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-right: 0;
   padding-bottom: 70px;
   padding-left: 0;
 }
 
 .technology__slider {
-  position: relative;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   border-top: 2px solid var(--border-color);
   border-bottom: 2px solid var(--border-color);
-}
-
-.technology-slider__wrapper {
-  margin-left: -2px;
-  max-width: 828px;
-}
-
-.technology-slider {
-  overflow: hidden;
 }
 
 .technology-slider__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: auto;
+  border-left: 2px solid var(--border-color);
   min-height: 146px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.technology-slider__slide:not(:first-of-type) {
-  border-left: 2px solid var(--border-color);
-}
-
-.technology-slider__prev-button::after,
-.technology-slider__next-button::after {
-  content: "";
-}
-
-.technology-slider__prev-button {
-  position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  margin-top: 0;
-  border-top: 2px solid var(--border-color);
-  border-right: 2px solid var(--border-color);
-  border-bottom: 2px solid var(--border-color);
-  border-left: none;
-  padding: 0;
-  width: 64px;
-  height: 146px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  background-image: none;
-  background-color: var(--blocks-bg);
-  -webkit-transition: background-color var(--transition);
-  -o-transition: background-color var(--transition);
-  transition: background-color var(--transition);
-}
-
-.technology-slider__next-button {
-  position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  margin-top: 0;
-  border-top: 2px solid var(--border-color);
-  border-right: none;
-  border-bottom: 2px solid var(--border-color);
-  border-left: 2px solid var(--border-color);
-  padding: 0;
-  width: 64px;
-  height: 146px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  background-image: none;
-  background-color: var(--blocks-bg);
-  -webkit-transition: background-color var(--transition);
-  -o-transition: background-color var(--transition);
-  transition: background-color var(--transition);
-}
-
-.technology-slider__prev-button img,
-.technology-slider__next-button img {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.technology-slider__prev-button.swiper-button-disabled {
-  opacity: 1;
-}
-
-.technology-slider__next-button.swiper-button-disabled {
-  opacity: 1;
-}
-
-.swiper-button-disabled img {
-  opacity: 0.35;
 }
 
 .technology-slider__icon {
@@ -1492,6 +1369,10 @@ body {
     min-height: auto;
   }
 
+  .technology-slider__slide {
+    min-height: 110px;
+  }
+
   .full-article__title {
     font-size: 32px;
     line-height: 52px;
@@ -1610,6 +1491,11 @@ body {
 
   .portfolio-card__image {
     width: 100%;
+  }
+
+  .technology-slider__icon {
+    width: 60px;
+    height: 60px;
   }
 
   .main-footer__container {
@@ -1771,14 +1657,6 @@ body {
 
   .technology-slider__slide {
     min-height: 90px;
-  }
-
-  .technology-slider__prev-button {
-    height: 90px;
-  }
-
-  .technology-slider__next-button {
-    height: 90px;
   }
 
   .technology-slider__icon {
