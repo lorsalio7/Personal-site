@@ -36,26 +36,27 @@ function setLightTheme() {
 } // =====================================================
 
 
-var technologySliderContainer = document.querySelector(".technology-slider");
-var technologySlider;
+var technologySlider = document.querySelector(".technology-slider");
 
-if (technologySliderContainer) {
-  technologySlider = new Swiper(".technology-slider", {
-    slidesPerView: 3,
-    spaceBetween: 2,
-    navigation: {
-      nextEl: '.technology-slider__next-button',
-      prevEl: '.technology-slider__prev-button'
+if (technologySlider) {
+  technologySlider = new Splide(technologySlider, {
+    type: "loop",
+    arrows: false,
+    mediaQuery: 'max',
+    autoScroll: {
+      speed: 1
     },
+    perPage: 5,
+    pagination: false,
     breakpoints: {
-      768: {
-        slidesPerView: 5
-      },
       600: {
-        slidesPerView: 4
+        perPage: 4
+      },
+      425: {
+        perPage: 3
       }
     }
-  });
+  }).mount(window.splide.Extensions);
 } // =================================================
 
 
