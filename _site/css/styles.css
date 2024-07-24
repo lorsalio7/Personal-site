@@ -513,12 +513,6 @@ body {
   fill: var(--title-color);
 }
 
-.site-logo--footer {
-  display: inline-block;
-  margin-bottom: 5px;
-  fill: var(--footer-text);
-}
-
 .theme-button {
   position: relative;
   border: 2px solid var(--title-color);
@@ -797,6 +791,7 @@ body {
 }
 
 .technology__container {
+  border-bottom: none;
   padding-right: 0;
   padding-bottom: 70px;
   padding-left: 0;
@@ -825,25 +820,164 @@ body {
   fill: var(--paragraph-color);
 }
 
+.contacts__container {
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
+  padding-bottom: 70px;
+}
+
+.contacts__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 70px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.contacts__title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -21px;
+  width: 100px;
+  height: 6px;
+  background-color: var(--accent-color);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.contacts__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 50px 45px;
+}
+
+.contacts__item:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--footer-bg);
+}
+
+.contacts__subtitle {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--footer-text);
+}
+
+.contacts__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 34px;
+  color: var(--footer-text);
+}
+
+.contacts-item__title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--title-color);
+}
+
+.contacts-item__row {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.contacts-item__row:last-of-type {
+  margin-bottom: 30px;
+}
+
+.contacts-item__days {
+  margin-right: 18px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--title-color);
+}
+
+.contacts-item__time {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--paragraph-color);
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.contacts-list__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts-list__icon {
+  margin-right: 18px;
+  fill: var(--title-color);
+}
+
+.contacts-list__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--paragraph-color);
+}
+
 .main-footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 40px 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 15px;
   background-color: var(--footer-bg);
+}
+
+.main-footer__logo {
+  margin-bottom: 20px;
+  fill: var(--footer-text);
 }
 
 .main-footer__copyright {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 29px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--footer-text);
 }
@@ -1319,6 +1453,26 @@ body {
 }
 
 @media (max-width: 900px) {
+  .contacts__item {
+    padding: 30px 25px;
+  }
+
+  .contacts__subtitle {
+    font-size: 26px;
+  }
+
+  .contacts__description {
+    font-size: 16px;
+  }
+
+  .contacts-item__days {
+    font-size: 16px;
+  }
+
+  .contacts-item__time {
+    font-size: 16px;
+  }
+
   .prev-next__text {
     padding: 50px 30px 30px 80px;
   }
@@ -1371,6 +1525,17 @@ body {
 
   .technology-slider__slide {
     min-height: 110px;
+  }
+
+  .contacts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts__item {
+    padding: 50px 45px;
   }
 
   .full-article__title {
@@ -1471,15 +1636,6 @@ body {
 }
 
 @media (max-width: 600px) {
-  .site-logo--footer {
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
   .about__heading {
     font-size: 22px;
     line-height: 32px;
@@ -1498,25 +1654,8 @@ body {
     height: 60px;
   }
 
-  .main-footer__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 40px 15px;
-  }
-
-  .main-footer__copyright {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  .main-footer__credits {
-    margin-bottom: 20px;
-    text-align: center;
+  .contacts__item {
+    padding: 30px 25px;
   }
 
   .full-article__title {
@@ -1664,6 +1803,35 @@ body {
     height: 50px;
   }
 
+  .contacts__title {
+    font-size: 27px;
+  }
+
+  .contacts__item {
+    padding: 30px 15px;
+  }
+
+  .contacts__description {
+    line-height: 26px;
+  }
+
+  .contacts-item__days {
+    margin-right: 8px;
+    font-size: 15px;
+  }
+
+  .contacts-item__time {
+    font-size: 15px;
+  }
+
+  .contacts-list__icon {
+    margin-right: 8px;
+  }
+
+  .contacts-list__link {
+    font-size: 15px;
+  }
+
   .full-article__header {
     margin-bottom: 0;
   }
@@ -1721,6 +1889,11 @@ body {
 
   .portfolio-card__link:hover {
     background-size: 100% 3px;
+  }
+
+  .contacts-list__link:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
   }
 
   .main-footer__link:hover {
