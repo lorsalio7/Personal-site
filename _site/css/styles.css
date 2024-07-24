@@ -671,6 +671,91 @@ body {
   margin-right: 30px;
 }
 
+.about__container {
+  padding: 70px 32px;
+}
+
+.about__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 70px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.about__title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -21px;
+  width: 100px;
+  height: 6px;
+  background-color: var(--accent-color);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about__description {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 34px;
+  color: var(--paragraph-color);
+}
+
+.about__description:first-of-type {
+  text-indent: 40px;
+}
+
+.about__description:last-of-type {
+  margin-bottom: 36px;
+}
+
+.about__subtitle {
+  margin-top: 0;
+  margin-bottom: 44px;
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--title-color);
+}
+
+.about__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-list__item:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.about-list__icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 24px;
+  fill: var(--paragraph-color);
+}
+
+.about-list__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--paragraph-color);
+}
+
 .portfolio--page > .portfolio__container {
   padding: 50px 15px 70px;
 }
@@ -1684,6 +1769,10 @@ body {
     margin-bottom: 24px;
   }
 
+  .about__container {
+    padding: 50px 20px;
+  }
+
   .portfolio__item {
     margin: 15px 0;
   }
@@ -1806,6 +1895,35 @@ body {
   .hero__description {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .about__container {
+    padding: 40px 15px;
+  }
+
+  .about__title {
+    font-size: 27px;
+  }
+
+  .about__description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .about__description:first-of-type {
+    text-indent: unset;
+  }
+
+  .about__subtitle {
+    font-size: 24px;
+  }
+
+  .about-list__icon {
+    margin-right: 14px;
+  }
+
+  .about-list__text {
+    font-size: 16px;
   }
 
   .portfolio--page > .portfolio__container {
