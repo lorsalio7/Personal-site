@@ -1,15 +1,17 @@
-<article class="portfolio__item portfolio-card">
+<article class="post__item post-card">
   <picture>
     <source srcset="{{ post.images.smallpost-webp }}" type="image/webp">
-    <img class="portfolio-card__image" loading="lazy" src="{{ post.images.smallpost-jpg }}" width="436" height="244" alt="{{ post.title }}">
+    <img class="post-card__image" loading="lazy" src="{{ post.images.smallpost-jpg }}" width="436" height="244" alt="{{ post.title }}">
   </picture>
-  <div class="portfolio-card__text-content">
-    <h3 class="portfolio-card__title">
-      <a class="portfolio-card__link" href="{{ post.url }}">{{ post.title }}</a>
+  <div class="post-card__text-content">
+    <h3 class="post-card__title">
+      <a class="post-card__link" href="{{ post.url }}">
+        <span>{{ post.title }}</span>
+      </a>
     </h3>
-    <p class="portfolio-card__info">
-      <span class="portfolio-card__tag">#{{ post.tag }} /</span>
-      <time class="portfolio-card__time" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d' }}.{{ post.date | date: '%m' }}.{{ post.date | date: '%Y' }}</time>
+    <p class="post-card__info">
+      <span class="post-card__tag">#{{ post.tag }} /</span>
+      <time class="post-card__time" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%d' }}.{{ post.date | date: '%m' }}.{{ post.date | date: '%Y' }}</time>
     </p>
   </div>
 </article>

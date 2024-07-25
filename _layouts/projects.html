@@ -1,11 +1,11 @@
-{% include /top-portfolio.html %}
+{% include /top-post.html %}
   <body>
     {% include /header.html %}
     <main class="main">
-      <section class="portfolio portfolio--page">
-        <div class="container portfolio__container">
-          <h1 class="portfolio__title">Последние работы</h1>
-          <div class="portfolio__list">
+      <section class="post post--page">
+        <div class="container post__container">
+          <h1 class="post__title">Последние работы</h1>
+          <div class="post__list">
             {% for post in paginator.posts %}
             {% include /small-post.html %}
             {% endfor %}

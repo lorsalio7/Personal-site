@@ -17,15 +17,15 @@
         </div>
       </section>
 {% include /about.html %}
-      <section class="portfolio">
-        <div class="container portfolio__container">
-          <h2 class="portfolio__title">Последние работы</h2>
-          <div class="portfolio__list">
+      <section class="post">
+        <div class="container post__container">
+          <h2 class="post__title">Последние работы</h2>
+          <div class="post__list">
             {% for post in site.posts limit: 2 offset: 0 %}
             {% include /small-post.html %}
             {% endfor %}
           </div>
-          <div class="portfolio__button">
+          <div class="post__button">
             <a class="button" href="/projects" title="Все работы">Все работы</a>
           </div>
         </div>

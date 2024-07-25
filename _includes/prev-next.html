@@ -12,7 +12,9 @@
       <div class="prev-next__text">
         <span class="prev-next__indicator">предыдущий проект</span>
         <h3 class="prev-next__title">
-          <a class="prev-next__link" href="{{ page.next.url }}">{{ page.next.title }}</a>
+          <a class="prev-next__link" href="{{ page.next.url }}">
+            <span>{{ page.next.title }}</span>
+          </a>
         </h3>
       </div>
     </article>
@@ -27,7 +29,9 @@
       <div class="prev-next__text">
         <span class="prev-next__indicator">следующий проект</span>
         <h3 class="prev-next__title">
-          <a class="prev-next__link" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+          <a class="prev-next__link" href="{{ page.previous.url }}">
+            <span>{{ page.previous.title }}</span>
+          </a>
         </h3>
       </div>
     </article>
