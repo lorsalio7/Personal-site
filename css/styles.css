@@ -898,7 +898,7 @@ body {
 .technology__container {
   border-bottom: none;
   padding-right: 0;
-  padding-bottom: 70px;
+  padding-bottom: 0;
   padding-left: 0;
 }
 
@@ -1200,6 +1200,20 @@ body {
   color: var(--title-color);
 }
 
+.raw-content pre {
+  margin-top: 0;
+  margin-bottom: 30px;
+  white-space: pre-wrap;
+}
+
+.raw-content pre code {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.4;
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
 .raw-content ul {
   margin-top: 0;
   margin-bottom: 30px;
@@ -1263,6 +1277,71 @@ body {
 .full-article__button {
   margin: 70px 0;
   text-align: center;
+}
+
+.share {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.share__text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--title-color);
+}
+
+.share__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.share__item:not(:last-of-type) {
+  margin-right: 14px;
+}
+
+.share__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid var(--border-color);
+  width: 48px;
+  height: 48px;
+}
+
+.share__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  -webkit-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+
+.share__icon {
+  position: relative;
+  z-index: 3;
+  fill: var(--button-text-color);
 }
 
 .prev-next__container {
@@ -2052,6 +2131,15 @@ body {
     font-size: 18px;
     line-height: 30px;
   }
+
+  .share__item:not(:last-of-type) {
+    margin-right: 10px;
+  }
+
+  .share__link {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 @media (hover: hover) {
@@ -2078,6 +2166,14 @@ body {
 
   .raw-content p a:hover {
     color: var(--accent-color);
+  }
+
+  .share__link:hover::before {
+    height: 0;
+  }
+
+  .share__link:hover > .share__icon {
+    fill: var(--hover-button-text-color);
   }
 
   .prev-next__link:hover > span {
