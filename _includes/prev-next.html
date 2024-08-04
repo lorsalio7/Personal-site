@@ -1,40 +1,53 @@
 <section class="prev-next">
-  <h2 class="visually-hidden">Другие работы</h2>
+  <h2 class="visually-hidden">Смотрите ещё:</h2>
   <div class="container prev-next__container">
-    {% if page.next.url %}
-    <article class="prev-next__article">
-      <div class="prev-next__image-wrapper">
-        <picture>
-          <source srcset="{{ page.next.images.thumb-webp }}" type="image/webp">
-          <img class="prev-next__image" loading="lazy" src="{{ page.next.images.thumb-jpg }}" width="248" height="140" alt="{{ page.next.title }}">
-        </picture>
-      </div>
-      <div class="prev-next__text">
-        <span class="prev-next__indicator">предыдущий проект</span>
-        <h3 class="prev-next__title">
-          <a class="prev-next__link" href="{{ page.next.url }}">
-            <span>{{ page.next.title }}</span>
-          </a>
-        </h3>
-      </div>
-    </article>
-    {% endif %}
-    {% if page.previous.url %}
+    {% assign cat = page.categories[0] %}
+{% assign cat_list = site.categories[cat] %}
+{% for post in cat_list %}
+  {% if post.url == page.url %}
+    {% assign pOffset = forloop.index0 | minus: 1 %}
+    {% assign nOffset = pOffset | plus: 2 %}
+    {% if forloop.first == false %}
+      {% assign next_post = cat_list[pOffset] %}
+
+      <article class="prev-next__article">
+        <div class="prev-next__image-wrapper">
+          <picture>
+            <source srcset="{{ next_post.images.thumb-webp }}" type="image/webp">
+            <img class="prev-next__image" loading="lazy" src="{{ next_post.images.thumb-jpg }}" width="248" height="140" alt="{{ next_post.title }}">
+          </picture>
+        </div>
+        <div class="prev-next__text">
+          <span class="prev-next__indicator">НАЗАД</span>
+          <h3 class="prev-next__title">
+            <a class="prev-next__link" href="{{ next_post.url }}">
+              <span>{{ next_post.title }}</span>
+            </a>
+          </h3>
+        </div>
+      </article>
+      {% endif %}
+    {% if forloop.last == false %}
+      {% assign previous_post = cat_list[nOffset] %}
+
     <article class="prev-next__article prev-next__article--reverse">
       <div class="prev-next__image-wrapper">
         <picture>
-          <source srcset="{{ page.previous.images.thumb-webp }}" type="image/webp"><img class="prev-next__image" loading="lazy" src="{{ page.previous.images.thumb-jpg }}" width="248" height="140" alt="{{ page.previous.title }}">
+          <source srcset="{{ previous_post.images.thumb-webp }}" type="image/webp"><img class="prev-next__image" loading="lazy" src="{{ previous_post.images.thumb-jpg }}" width="248" height="140" alt="{{ previous_post.title }}">
         </picture>
       </div>
       <div class="prev-next__text">
-        <span class="prev-next__indicator">следующий проект</span>
+        <span class="prev-next__indicator">ВПЕРЕД</span>
         <h3 class="prev-next__title">
-          <a class="prev-next__link" href="{{ page.previous.url }}">
-            <span>{{ page.previous.title }}</span>
+          <a class="prev-next__link" href="{{ previous_post.url }}">
+            <span>{{ previous_post.title }}</span>
           </a>
         </h3>
       </div>
     </article>
     {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
   </div>
 </section>

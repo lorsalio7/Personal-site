@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  "Многостраничный блог The Blog"
 description:  "Верстка многостраничного блога The Blog"
+categories: projects
 date:  2023-07-28
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

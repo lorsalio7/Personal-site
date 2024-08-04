@@ -1,0 +1,8 @@
+{% if page.url contains "/projects/" %}
+<link rel="canonical" href="{{ site.url }}/projects/" />
+{% endif %}
+{% if page.url contains "/blog/" %}
+<link rel="canonical" href="{{ site.url }}/blog/" />
+{% endif %}
+{% if paginator.previous_page %}<link rel="prev" href="{{ site.url }}{{ paginator.previous_page_path | relative_url }}" />{% endif %}
+{% if paginator.next_page %}<link rel="next" href="{{ site.url }}{{ paginator.next_page_path | relative_url }}" />{% endif %}

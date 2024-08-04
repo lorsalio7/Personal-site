@@ -36,6 +36,25 @@ function setLightTheme() {
 } // =====================================================
 
 
+function updateFavicon() {
+  var FAVICON_PNG = document.querySelector('link[type="image/png"]');
+  var FAVICON_SVG = document.querySelector('link[type="image/svg+xml"]');
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (isDarkMode) {
+    FAVICON_PNG.href = "/favicon-dark.png";
+    FAVICON_SVG.href = "/favicon-dark.svg";
+  } else {
+    FAVICON_PNG.href = "/favicon-light.png";
+    FAVICON_SVG.href = "/favicon-light.svg";
+  }
+} // Обновляем фавиконку при загрузке страницы
+
+
+updateFavicon(); // Обновляем фавиконку при изменении темы
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon); // =====================================================
+
 var technologySlider = document.querySelector(".technology-slider");
 
 if (technologySlider) {

@@ -10,20 +10,31 @@ socials:
   github: https://github.com/lorsalio7
   email: erega74@gmail.com
 
+highlighter: none
+
 gems:
   - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-paginate-v2
 
-plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate]
+plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 6
+  sort_field: 'date'
+  sort_reverse: true
+  limit: 0
 
 
 imagehome: "img/imagehome.jpg"
 
 
-# enabled: true
-paginate_path: "/projects/pages/page:num/"
-paginate: 6
+
+# paginate: 1
+# # enabled: true
+# paginate_path: "/category/page:num/"
+# # paginate: 6
 
 
 # Exclude from processing.

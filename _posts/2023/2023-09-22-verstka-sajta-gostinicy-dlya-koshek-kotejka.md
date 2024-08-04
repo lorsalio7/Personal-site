@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  'Верстка сайта гостиницы для кошек Котейка'
 description:  'Верстка многостраничного сайта гостиницы для кошек Котейка'
+categories: projects
 date:  2023-09-22
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

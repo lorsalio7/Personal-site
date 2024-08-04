@@ -1,0 +1,21 @@
+{% include /top-catalog.html %}
+  <body>
+    {% include /header.html %}
+    <main class="main">
+      <section class="post post--page">
+        <div class="container post__container">
+          <h1 class="post__title">Все статьи:</h1>
+          <div class="post__list">
+            {% for post in paginator.posts %}
+            {% include /small-post.html %}
+            {% endfor %}
+          </div>
+          {% include /pagination.html %}
+        </div>
+      </section>
+    </main>
+    {% include /footer.html %}
+    <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

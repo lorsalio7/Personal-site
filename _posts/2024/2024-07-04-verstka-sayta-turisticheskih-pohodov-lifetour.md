@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  "Верстка сайта туристических походов Lifetour"
 description:  "Адаптивная верстка сайта туристических походов в горы России Lifetour"
+categories: projects
 date:  2024-07-04
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

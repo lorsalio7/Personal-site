@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  "Интернет-магазин джинсовой одежды Nimes"
 description:  "Верстка интернет-магазина джинсовой одежды Nimes"
+categories: projects
 date:  2023-04-10
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

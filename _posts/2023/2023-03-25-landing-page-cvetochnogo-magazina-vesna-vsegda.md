@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  "Landing-page цветочного магазина Весна всегда"
 description:  "Верстка landing-page цветочного магазина Весна всегда"
+categories: projects
 date:  2023-03-25
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

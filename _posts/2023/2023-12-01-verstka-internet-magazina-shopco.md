@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  'Верстка интернет-магазина Shopco'
 description:  'Верстка интернет-магазина одежды от известных брендов Shopco'
+categories: projects
 date:  2023-12-01
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

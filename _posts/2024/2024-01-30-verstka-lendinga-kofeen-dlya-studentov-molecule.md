@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  'Верстка лендинга Molecule'
 description:  'Верстка лендинга кофеен для студентов Molecule'
+categories: projects
 date:  2024-01-30
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

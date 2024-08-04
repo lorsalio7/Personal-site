@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  "Верстка landing-page центра йоги - Lotos"
 description:  "Верстка полноэкранного слайдера одностраничника центра йоги - Lotos"
+categories: projects
 date:  2024-05-17
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

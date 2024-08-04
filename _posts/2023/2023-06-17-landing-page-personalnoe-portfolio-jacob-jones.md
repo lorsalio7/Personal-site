@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  "Landing page персональное портфолио Jacob Jones"
 description:  "Верстка landing page персонального портфолио Jacob Jones продуктового дизайнера"
+categories: projects
 date:  2023-06-17
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"

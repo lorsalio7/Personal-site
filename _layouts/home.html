@@ -21,12 +21,12 @@
         <div class="container post__container">
           <h2 class="post__title">Последние работы</h2>
           <div class="post__list">
-            {% for post in site.posts limit: 2 offset: 0 %}
+            {% for post in site.categories.projects limit: 2 offset: 0 %}
             {% include /small-post.html %}
             {% endfor %}
           </div>
           <div class="post__button">
-            <a class="button" href="/projects" title="Все работы">Все работы</a>
+            <a class="button" href="/projects/" title="Все работы">Все работы</a>
           </div>
         </div>
       </section>
@@ -39,6 +39,19 @@
                 {% include /technology-slides.html %}
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="post">
+        <div class="container post__container">
+          <h2 class="post__title">Блог</h2>
+          <div class="post__list">
+            {% for post in site.categories.blog limit: 2 offset: 0 %}
+            {% include /small-post.html %}
+            {% endfor %}
+          </div>
+          <div class="post__button">
+            <a class="button" href="/blog/" title="Все статьи">Все статьи</a>
           </div>
         </div>
       </section>

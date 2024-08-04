@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: page-projects
 title:  "Landing-page креативного агенства Agency Creative"
 description:  "Верстка landing-page креативного агентства Agency Creative"
+categories: projects
 date:  2023-03-12
 tag:  верстка
 permalink:  "projects/:year/:year-:month-:day-:slug/"
