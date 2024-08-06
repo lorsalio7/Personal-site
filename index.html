@@ -92,13 +92,15 @@
     </nav>
   </div>
 </header>
-    <main class="main">
-      <h1 class="visually-hidden">Сергей Закиров - верстальщик сайтов</h1>
+    <main class="main" itemscope itemtype="http://schema.org/Person">
+      <h1 class="visually-hidden"><span itemprop="name">Сергей Закиров</span> - <span itemprop="jobTitle">Верстальщик сайтов</span></h1>
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__content">
             <h2 class="visually-hidden">Кто я</h2>
+            <meta itemprop="url" content="https://sezak.ru">
             <img class="hero__image" src="img/avatar.svg" width="142" height="142" alt="Аватар Сергея">
+            <meta itemprop="image" content="https://sezak.ru/img/avatar.svg">
             <p class="hero__heading">Здравствуйте! Меня зовут Сергей, я занимаюсь версткой сайтов</p>
             <p class="hero__description">Здесь вы можете ознакомиться с моими работами и связаться со мной.</p>
             <div class="hero__buttons">
@@ -110,7 +112,7 @@
 <section class="about">
   <div class="container about__container">
     <h2 class="about__title">Обо мне</h2>
-    <p class="about__description">Я HTML-верстальщик, мне 33 года, создаю адаптивно-отзывчивые сайты из макетов Figma, Photoshop. Имею большой опыт работы с векторными иконками, хорошо владею Affinity Designer(векторный редактор), Affinity Photo(растровый редактор). Если в макете используются растровые иконки, логотипы я перерисовываю их в svg-формат.</p>
+    <p class="about__description" itemprop="description">Я HTML-верстальщик, мне 33 года, создаю адаптивно-отзывчивые сайты из макетов Figma, Photoshop. Имею большой опыт работы с векторными иконками, хорошо владею Affinity Designer(векторный редактор), Affinity Photo(растровый редактор). Если в макете используются растровые иконки, логотипы я перерисовываю их в svg-формат.</p>
     <p class="about__description">В дальнейших планах хочу изучить Wordpress и веб-дизайн.</p>
     <h3 class="about__subtitle">Профессиональные навыки</h3>
     <ul class="about__list about-list">
@@ -313,24 +315,25 @@
                 <use xlink:href="img/sprite.svg#email-ic"></use>
               </svg>
               <a class="contacts-list__link" href="mailto:erega74@gmail.com">erega74@gmail.com</a>
+              <meta itemprop="email" content="erega74@gmail.com">
             </p>
             <p class="contacts-list__item">
               <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#telegram-ic"></use>
               </svg>
-              <a class="contacts-list__link" href="https://t.me/sezak74">Телеграм</a>
+              <a class="contacts-list__link" itemprop="sameAs" href="https://t.me/sezak74">Телеграм</a>
             </p>
             <p class="contacts-list__item">
               <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#vk-ic"></use>
               </svg>
-              <a class="contacts-list__link" href="https://vk.com/id614911269">Вконтакте</a>
+              <a class="contacts-list__link" itemprop="sameAs" href="https://vk.com/id614911269">Вконтакте</a>
             </p>
             <p class="contacts-list__item">
               <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#github-ic"></use>
               </svg>
-              <a class="contacts-list__link" href="https://github.com/lorsalio7">GitHub</a>
+              <a class="contacts-list__link" itemprop="sameAs" href="https://github.com/lorsalio7">GitHub</a>
             </p>
           </div>
         </div>
