@@ -19,24 +19,25 @@
                 <use xlink:href="img/sprite.svg#email-ic"></use>
               </svg>
               <a class="contacts-list__link" href="mailto:{{ site.socials.email }}">{{ site.socials.email }}</a>
+              <meta itemprop="email" content="{{ site.socials.email }}">
             </p>
             <p class="contacts-list__item">
               <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#telegram-ic"></use>
               </svg>
-              <a class="contacts-list__link" href="{{ site.socials.telegram }}">Телеграм</a>
+              <a class="contacts-list__link" itemprop="sameAs" href="{{ site.socials.telegram }}">Телеграм</a>
             </p>
             <p class="contacts-list__item">
               <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#vk-ic"></use>
               </svg>
-              <a class="contacts-list__link" href="{{ site.socials.vk }}">Вконтакте</a>
+              <a class="contacts-list__link" itemprop="sameAs" href="{{ site.socials.vk }}">Вконтакте</a>
             </p>
             <p class="contacts-list__item">
               <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#github-ic"></use>
               </svg>
-              <a class="contacts-list__link" href="{{ site.socials.github }}">GitHub</a>
+              <a class="contacts-list__link" itemprop="sameAs" href="{{ site.socials.github }}">GitHub</a>
             </p>
           </div>
         </div>

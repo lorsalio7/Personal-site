@@ -1,13 +1,15 @@
 {% include /top-index.html %}
   <body>
     {% include /header.html %}
-    <main class="main">
-      <h1 class="visually-hidden">Сергей Закиров - верстальщик сайтов</h1>
+    <main class="main" itemscope itemtype="http://schema.org/Person">
+      <h1 class="visually-hidden"><span itemprop="name">Сергей Закиров</span> - <span itemprop="jobTitle">Верстальщик сайтов</span></h1>
       <section class="hero">
         <div class="container hero__container">
           <div class="hero__content">
             <h2 class="visually-hidden">Кто я</h2>
+            <meta itemprop="url" content="https://sezak.ru">
             <img class="hero__image" src="img/avatar.svg" width="142" height="142" alt="Аватар Сергея">
+            <meta itemprop="image" content="{{ site.url }}/img/avatar.svg">
             <p class="hero__heading">Здравствуйте! Меня зовут Сергей, я занимаюсь версткой сайтов</p>
             <p class="hero__description">Здесь вы можете ознакомиться с моими работами и связаться со мной.</p>
             <div class="hero__buttons">
