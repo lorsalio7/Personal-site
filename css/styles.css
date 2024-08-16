@@ -1274,6 +1274,16 @@ body {
      object-fit: contain;
 }
 
+.raw-content p code {
+  overflow-wrap: break-word;
+  border: 2px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 0 6px;
+  font-family: "Roboto Mono", monospace;
+  color: var(--paragraph-color);
+  background-color: var(--body-bg-color);
+}
+
 .full-article__button {
   margin: 70px 0;
   text-align: center;
