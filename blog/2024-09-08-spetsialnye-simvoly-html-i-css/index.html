@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="icon" type="image/svg+xml" href="/favicon-light.svg">
+<link rel="icon" type="image/png" href="/favicon-light.png">
+    
+    <title>Специальные символы html и css</title>
+    <meta name="generator" content="Jekyll v4.3.2" />
+
+<meta property="og:title" content="Специальные символы html и css" />
+<meta property="og:url" content="https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/" />
+<meta property="og:type" content="website" />
+<meta name="description" content="В данной таблице я собрал часто встречающиеся спецсимволы которые могут потребоваться при создании сайтов, в кодировке html и css" />
+<meta property="og:description" content="В данной таблице я собрал часто встречающиеся спецсимволы которые могут потребоваться при создании сайтов, в кодировке html и css" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Специальные символы html и css" />
+
+
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова" />
+<meta property="og:type" content="website" />
+
+<meta property="og:image" content="https://sezak.ru/images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/1.jpg">
+
+    <script>
+  window.addEventListener('load', function () {
+  window.cookieconsent.initialise({
+    revokeBtn: "<div class='cc-revoke'></div>",
+    type: "opt-in",
+    theme: "classic",
+    palette: {
+      popup: {
+        background: "#eee",
+        text: "#667085"
+      },
+      button: {
+        background: "#1a92ca",
+        text: "#fff"
+      }
+    },
+    content: {
+      link: "Политика Cookie",
+      href: "https://sezak.ru/policy"
+    },
+    onInitialise: function onInitialise(status) {
+      if (status == cookieconsent.status.allow) myScripts();
+    },
+    onStatusChange: function onStatusChange(status) {
+      if (this.hasConsented()) myScripts();
+    }
+  });
+  });
+
+  function myScripts() {
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(93403533, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+  }
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93403533" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM" />
+    <meta name="yandex-verification" content="c0984db1dbcd9786" />
+    
+    <link rel="stylesheet" href="css/highlight.min.css">
+    
+    <link rel="stylesheet" href="css/cookieconsent.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+  </head>
+  <body>
+    <header class="main-header">
+  <div class="container main-header__container">
+    <nav class="main-header__navigation">
+      <a class="site-logo" href="/">
+        <svg class="site-logo__image" width="43" height="48">
+          <use xlink:href="img/sprite.svg#header-logo"></use>
+        </svg>
+      </a>
+      <button class="theme-button" type="button" title="Сменить тему сайта">
+        <span class="theme-button__switch-slider"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+    <main class="main">
+      <div class="container container--article">
+        <article class="full-article">
+          <header class="full-article__header">
+            <h1 class="full-article__title">Специальные символы html и css</h1>
+            <p class="full-article__info">
+              <span class="full-article__tag">#шпаргалка /</span>
+              <time class="full-article__time" datetime="2024-09-08">08.09.2024</time>
+            </p>
+          </header>
+          <picture>
+            <source srcset="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/1.webp" type="image/webp"><img class="full-article__image" loading="lazy" src="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/1.jpg" width="968" height="544" alt="Специальные символы html и css">
+          </picture>
+          <div class="raw-content">
+            <p>В этой таблице я собрал часто используемые в разметке спецсимволы:</p>
+
+<div class="table-wrap">
+  <table>
+    <tbody>
+      <tr>
+        <th>Значение символа</th>
+        <th>HTML</th>
+        <th>CSS</th>
+      </tr>
+      <tr>
+        <td>Неразрывный пробел (&nbsp;)</td>
+        <td>&amp;nbsp;</td>
+        <td>\00a0</td>
+      </tr>
+      <tr>
+        <td>Меньше чем (&lt;)</td>
+        <td>&amp;lt;</td>
+        <td>\003C</td>
+      </tr>
+      <tr>
+        <td>Больше чем (&gt;)</td>
+        <td>&amp;gt;</td>
+        <td>\003E</td>
+      </tr>
+      <tr>
+        <td>Амперсанд (&amp;)</td>
+        <td>&amp;amp;</td>
+        <td>\0026</td>
+      </tr>
+      <tr>
+        <td>Двойная кавычка (&quot;)</td>
+        <td>&amp;quot;</td>
+        <td>\0022</td>
+      </tr>
+      <tr>
+        <td>Одинарная кавычка (&apos;)</td>
+        <td>&amp;apos;</td>
+        <td>\0027</td>
+      </tr>
+      <tr>
+        <td>Символ авторского права (&copy;)</td>
+        <td>&amp;copy;</td>
+        <td>\00A9</td>
+      </tr>
+      <tr>
+        <td>Зарегистрированный товарный знак (&reg;)</td>
+        <td>&amp;reg;</td>
+        <td>\00AE</td>
+      </tr>
+      <tr>
+        <td>Товарный знак (&trade;)</td>
+        <td>&amp;trade;</td>
+        <td>\2122</td>
+      </tr>
+      <tr>
+        <td>Тильда (&#126;)</td>
+        <td>&amp;#126;</td>
+        <td>\007E</td>
+      </tr>
+      <tr>
+        <td>Фунт стерлингов (&pound;)</td>
+        <td>&amp;pound;</td>
+        <td>\00A3</td>
+      </tr>
+      <tr>
+        <td>Евро (&euro;)</td>
+        <td>&amp;euro;</td>
+        <td>\20AC</td>
+      </tr>
+      <tr>
+        <td>Доллар (&#36;)</td>
+        <td>&amp;#36;</td>
+        <td>\0024</td>
+      </tr>
+      <tr>
+        <td>Йена (&yen;)</td>
+        <td>&amp;yen;</td>
+        <td>\00A5</td>
+      </tr>
+      <tr>
+        <td>Рубль (&#8381;)</td>
+        <td>&amp;#8381;</td>
+        <td>\20BD</td>
+      </tr>
+      <tr>
+        <td>Набла (&nabla;)</td>
+        <td>&amp;nabla;</td>
+        <td>\2207</td>
+      </tr>
+      <tr>
+        <td>Раздел (&sect;)</td>
+        <td>&amp;sect;</td>
+        <td>\00A7</td>
+      </tr>
+      <tr>
+        <td>Параграф (&para;)</td>
+        <td>&amp;para;</td>
+        <td>\00B6</td>
+      </tr>
+      <tr>
+        <td>Маркер (&bull;)</td>
+        <td>&amp;bull;</td>
+        <td>\2022</td>
+      </tr>
+      <tr>
+        <td>Многоточие (&hellip;)</td>
+        <td>&amp;hellip;</td>
+        <td>\2026</td>
+      </tr>
+      <tr>
+        <td>Длинное тире (&mdash;)</td>
+        <td>&amp;mdash;</td>
+        <td>\2014</td>
+      </tr>
+      <tr>
+        <td>Короткое тире (&ndash;)</td>
+        <td>&amp;ndash;</td>
+        <td>\2013</td>
+      </tr>
+      <tr>
+        <td>Градус (&deg;)</td>
+        <td>&amp;deg;</td>
+        <td>\00B0</td>
+      </tr>
+      <tr>
+        <td>Умножение (&times;)</td>
+        <td>&amp;times;</td>
+        <td>\00D7</td>
+      </tr>
+      <tr>
+        <td>Деление (&divide;)</td>
+        <td>&amp;divide;</td>
+        <td>\00F7</td>
+      </tr>
+      <tr>
+        <td>Четверть (&frac14;)</td>
+        <td>&amp;frac14;</td>
+        <td>\00BC</td>
+      </tr>
+      <tr>
+        <td>Половина (&frac12;)</td>
+        <td>&amp;frac12;</td>
+        <td>\00BD</td>
+      </tr>
+      <tr>
+        <td>Три четверти (&frac34;)</td>
+        <td>&amp;frac34;</td>
+        <td>\00BE</td>
+      </tr>
+      <tr>
+        <td>Звездочка (*)</td>
+        <td>&amp;ast;</td>
+        <td>\002A</td>
+      </tr>
+      <tr>
+        <td>Верхний индекс 1 (&sup1;)</td>
+        <td>&amp;sup1;</td>
+        <td>\00B9</td>
+      </tr>
+      <tr>
+        <td>Верхний индекс 2 (&sup2;)</td>
+        <td>&amp;sup2;</td>
+        <td>\00B2</td>
+      </tr>
+      <tr>
+        <td>Верхний индекс 3 (&sup3;)</td>
+        <td>&amp;sup3;</td>
+        <td>\00B3</td>
+      </tr>
+      <tr>
+        <td>Бесконечность (&infin;)</td>
+        <td>&amp;infin;</td>
+        <td>\221E</td>
+      </tr>
+      <tr>
+        <td>Плюс-минус (&plusmn;)</td>
+        <td>&amp;plusmn;</td>
+        <td>\00B1</td>
+      </tr>
+      <tr>
+        <td>Символ номера (&#8470;)</td>
+        <td>&amp;#8470;</td>
+        <td>\2116</td>
+      </tr>
+      <tr>
+        <td>Символ равно (&equals;)</td>
+        <td>&amp;equals;</td>
+        <td>\003D</td>
+      </tr>
+      <tr>
+        <td>Дюймы (&#8243;)</td>
+        <td>&amp;#8243;</td>
+        <td>\2033</td>
+      </tr>
+      <tr>
+        <td>Стрелка влево (&#8592;)</td>
+        <td>&amp;#8592;</td>
+        <td>\2190</td>
+      </tr>
+      <tr>
+        <td>Стрелка вверх (&#8593;)</td>
+        <td>&amp;#8593;</td>
+        <td>\2191</td>
+      </tr>
+      <tr>
+        <td>Стрелка вправо (&#8594;)</td>
+        <td>&amp;#8594;</td>
+        <td>\2192</td>
+      </tr>
+      <tr>
+        <td>Стрелка вниз (&#8595;)</td>
+        <td>&amp;#8595;</td>
+        <td>\2193</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+          </div>
+          <div class="full-article__share share">
+  <p class="share__text">Сохранить в:</p>
+  <ul class="share__list">
+    <li class="share__item">
+      <a class="share__link" href="https://twitter.com/intent/tweet?text=Специальные символы html и css&url=https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/&utm_source=share2" rel="nofollow noopener" target="_blank" title="Сохранить в X">
+        <svg class="share__icon" width="20" height="18">
+          <use xlink:href="img/sprite.svg#x-social-ic"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="share__item">
+      <a class="share__link" href="https://vk.com/share.php?url=https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/&title=Специальные символы html и css&utm_source=share2" rel="nofollow noopener" target="_blank" title="Сохранить в Вконтакте">
+        <svg class="share__icon" width="22" height="15">
+          <use xlink:href="img/sprite.svg#vk-social-ic"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="share__item">
+      <a class="share__link" href="https://t.me/share/url?url=https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/&text=Специальные символы html и css&utm_source=share2" rel="nofollow noopener" target="_blank" title="Сохранить в Телеграм">
+        <svg class="share__icon" width="22" height="22">
+          <use xlink:href="img/sprite.svg#tg-social-ic"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="share__item">
+      <a class="share__link" href="https://connect.ok.ru/offer?url=https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/&title=Специальные символы html и css&utm_source=share2" rel="nofollow noopener" target="_blank" title="Сохранить в Одноклассниках">
+        <svg class="share__icon" width="16" height="23">
+          <use xlink:href="img/sprite.svg#ok-social-ic"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="share__item">
+      <a class="share__link" href="https://connect.mail.ru/share?url=https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/&title=Специальные символы html и css&utm_source=share2" rel="nofollow noopener" target="_blank" title="Сохранить в Мой Мир">
+        <svg class="share__icon" width="26" height="17">
+          <use xlink:href="img/sprite.svg#mm-social-ic"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+        </article>
+      </div>
+      <section class="prev-next">
+  <h2 class="visually-hidden">Смотрите ещё:</h2>
+  <div class="container prev-next__container">
+    
+
+
+  
+    
+    
+    
+    
+      
+
+    <article class="prev-next__article prev-next__article--reverse">
+      <div class="prev-next__image-wrapper">
+        <picture>
+          <source srcset="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/thumb-post.webp" type="image/webp"><img class="prev-next__image" loading="lazy" src="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/thumb-post.jpg" width="248" height="140" alt="Как сделать бургер кнопку на css с анимацией">
+        </picture>
+      </div>
+      <div class="prev-next__text">
+        <span class="prev-next__indicator">ВПЕРЕД</span>
+        <h3 class="prev-next__title">
+          <a class="prev-next__link" href="/blog/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/">
+            <span>Как сделать бургер кнопку на css с анимацией</span>
+          </a>
+        </h3>
+      </div>
+    </article>
+    
+    
+  </div>
+</section>
+    </main>
+    <footer class="main-footer">
+  <div class="container main-footer__container">
+    <a class="site-logo main-footer__logo" href="/">
+      <svg class="site-logo__image" width="43" height="48">
+        <use xlink:href="img/sprite.svg#header-logo"></use>
+      </svg>
+    </a>
+    <p class="main-footer__copyright">&copy; <span class="main-footer__year"></span> sezak.ru все права защищены</p>
+    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://jekyllrb.com/" rel="nofollow noopener" target="_blank">Jekyll</a></p>
+  </div>
+</footer>
+    
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
