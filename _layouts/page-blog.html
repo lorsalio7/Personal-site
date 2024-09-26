@@ -15,7 +15,9 @@
             <source srcset="{{ page.images.fullpost-webp }}" type="image/webp"><img class="full-article__image" loading="lazy" src="{{ page.images.fullpost-jpg }}" width="968" height="544" alt="{{ page.title }}">
           </picture>
           <div class="raw-content">
+            {% include /kwork.html %}
             {{ content }}
+            {% include /kwork.html %}
           </div>
           {% include /share.html %}
         </article>
