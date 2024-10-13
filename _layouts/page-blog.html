@@ -1,5 +1,6 @@
 {% include /top-blog.html %}
   <body>
+    {% include /metrika.html %}
     {% include /header.html %}
     <main class="main">
       <div class="container container--article">
@@ -30,7 +31,8 @@
     <script src="js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     {% endif %}
-    <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="js/cookieconsent.umd.js"></script>
+    <script src="js/cookieconsent-config.js" type="module"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

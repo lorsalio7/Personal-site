@@ -26,59 +26,36 @@
 
 <meta property="og:image" content="https://sezak.ru/images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/1.jpg">
 
-    <script>
-  window.addEventListener('load', function () {
-  window.cookieconsent.initialise({
-    revokeBtn: "<div class='cc-revoke'></div>",
-    type: "opt-in",
-    theme: "classic",
-    palette: {
-      popup: {
-        background: "#eee",
-        text: "#667085"
-      },
-      button: {
-        background: "#1a92ca",
-        text: "#fff"
-      }
-    },
-    content: {
-      link: "Политика Cookie",
-      href: "https://sezak.ru/policy"
-    },
-    onInitialise: function onInitialise(status) {
-      if (status == cookieconsent.status.allow) myScripts();
-    },
-    onStatusChange: function onStatusChange(status) {
-      if (this.hasConsented()) myScripts();
-    }
-  });
-  });
-
-  function myScripts() {
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(93403533, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-  }
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/93403533" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM" />
     <meta name="yandex-verification" content="c0984db1dbcd9786" />
     
     <link rel="stylesheet" href="css/highlight.min.css">
     
-    <link rel="stylesheet" href="css/cookieconsent.min.css">
+    <link rel="stylesheet" href="css/cookieconsent.css">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
+    <!-- yandex metrika -->
+<script type="text/plain" data-cookie-consent="strictly-necessary" data-category="analytics" data-service="Yandex Metrika">
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  
+   ym(93403533, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<!-- end of yandex metrika-->
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/93403533" style="position:absolute; left:-9999px;" alt="">
+  </div>
+</noscript>
+<span class="overlay"></span>
     <header class="main-header">
   <div class="container main-header__container">
     <nav class="main-header__navigation">
@@ -339,7 +316,8 @@
     <script src="js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     
-    <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="js/cookieconsent.umd.js"></script>
+    <script src="js/cookieconsent-config.js" type="module"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

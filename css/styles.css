@@ -1686,42 +1686,29 @@ body {
   margin-right: 15px;
 }
 
-.cc-window[aria-label=cookieconsent] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 2px solid #1a1b4b;
+#cc-main .cm--bar.cm--inline .cm__body,
+#cc-main .cm--bar.cm--inline .cm__links {
+  max-width: 972px;
 }
 
-.cc-window[aria-label=cookieconsent] .cc-message {
-  margin-bottom: 0;
+#cc-main .cm__btns,
+#cc-main .cm__links {
+  padding: 1rem 30px;
+  width: unset;
 }
 
-.cc-window.cc-floating .cc-compliance {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+#cc-main .cm__desc,
+#cc-main .cm__title {
+  padding: 0 1.3rem 15px 0;
 }
 
-.cc-window[aria-label=cookieconsent].cc-floating {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-radius: 0;
-  max-width: 100%;
+#cc-main .cm__title + .cm__desc {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+#cc-main .cm__texts {
+  padding: 1rem 30px;
 }
 
 .policy h1 {
@@ -1769,6 +1756,21 @@ body {
   transition: color 0.3s ease;
 }
 
+.show--consent .overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 214748364;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay {
+  display: none;
+}
+
 @media (max-width: 1020px) {
   body {
     padding: 0 15px;
@@ -1790,6 +1792,15 @@ body {
         -ms-flex-align: center;
             align-items: center;
     border-left: none;
+  }
+
+  #cc-main .cm__btns,
+  #cc-main .cm__links {
+    padding: 1rem 20px;
+  }
+
+  #cc-main .cm__texts {
+    padding: 1rem 20px;
   }
 }
 
@@ -1944,31 +1955,6 @@ body {
     text-align: center;
   }
 
-  .cc-window[aria-label=cookieconsent] {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .cc-window[aria-label=cookieconsent] .cc-message {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .cc-window[aria-label=cookieconsent].cc-floating {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .policy h1 {
     font-size: 32px;
     line-height: 52px;
@@ -1977,6 +1963,17 @@ body {
   .policy h2 {
     font-size: 28px;
     line-height: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  #cc-main .cm__desc,
+  #cc-main .cm__title {
+    padding: 0 1.3rem 15px 0 !important;
+  }
+
+  #cc-main .cm__title + .cm__desc {
+    padding-bottom: 0 !important;
   }
 }
 
