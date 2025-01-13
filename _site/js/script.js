@@ -79,6 +79,22 @@ if (technologySlider) {
 } // =================================================
 
 
+var cerificatesGallery = document.querySelector(".gallery-certificates");
+
+if (cerificatesGallery) {
+  window.addEventListener("load", function () {
+    var cerificateImages = cerificatesGallery.querySelectorAll(".gallery-certificates__item img");
+    var cerificateItems = cerificatesGallery.querySelectorAll(".gallery-certificates__item");
+    var fileExtension = cerificateImages[0].currentSrc.match(/\.([a-z]+)/g).at(-1);
+    console.log(cerificateImages[0].currentSrc.match(/\.([a-z]+)/g).at(-1));
+    cerificateItems.forEach(function (bigImage) {
+      bigImage.href = bigImage.href + fileExtension;
+    });
+    baguetteBox.run(".gallery-certificates");
+  });
+} // =================================================
+
+
 var prevNextReverse = document.querySelector(".prev-next__article--reverse");
 var prevNextContainer = document.querySelector(".prev-next__container");
 
