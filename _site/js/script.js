@@ -52,8 +52,10 @@ function updateFavicon() {
 
 
 updateFavicon(); // Обновляем фавиконку при изменении темы
+// window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon); // =====================================================
+var mediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+mediaQueryList.addListener(updateFavicon); // =====================================================
 
 var technologySlider = document.querySelector(".technology-slider");
 
@@ -82,8 +84,9 @@ if (technologySlider) {
 var cerificatesGallery = document.querySelector(".gallery-certificates");
 
 if (cerificatesGallery) {
-  window.addEventListener("load", function () {
-    baguetteBox.run(".gallery-certificates");
+  baguetteBox.run(".gallery", {
+    noScrollbars: true,
+    fullScreen: false
   });
 } // =================================================
 
