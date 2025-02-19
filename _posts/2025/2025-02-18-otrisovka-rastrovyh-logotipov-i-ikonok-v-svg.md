@@ -32,7 +32,7 @@ images:
   <li>SVG-файлы легко интегрируются в веб-страницы, поддерживают анимацию и различные взаимодействия.</li>
 </ul>
 
-<h2 id="poslednii-raboty">Последнии работы</h2>
+<h2 id="poslednii-raboty">Последние работы</h2>
 
 <section class="splide post-slider">
   <div class="splide__track">
