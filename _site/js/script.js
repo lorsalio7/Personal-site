@@ -120,3 +120,21 @@ var footerYear = document.querySelector(".main-footer__year");
 if (footerYear) {
   footerYear.textContent = new Date().getFullYear();
 } // =================================================
+
+
+var toc = document.getElementById("toc");
+
+if (toc) {
+  var currentURL = document.location.href.replace(/#.*$/, "");
+  var tocLinks = toc.querySelectorAll(".toc-entry a");
+
+  for (var i = 0; i < tocLinks.length; i++) {
+    var link = tocLinks[i];
+
+    if (!link.getAttribute("href").match(/^#/)) {
+      continue;
+    }
+
+    link.setAttribute("href", currentURL + link.getAttribute("href"));
+  }
+} // =================================================
