@@ -78,6 +78,21 @@ if (technologySlider) {
       }
     }
   }).mount(window.splide.Extensions);
+}
+
+var postSliders = document.querySelectorAll(".post-slider");
+
+if (postSliders[0]) {
+  postSliders.forEach(function (slider) {
+    slider = new Splide(slider, {
+      arrowPath: "M27.6151 7.51706L39.4551 18.7517C40.1816 19.4411 40.1816 20.5589 39.4551 21.2483L27.6151 32.4829C26.8885 33.1724 25.7105 33.1724 24.984 32.4829C24.2575 31.7935 24.2575 30.6757 24.984 29.9863L33.648 21.7653H0V18.2346H33.648L24.984 10.0136C24.2575 9.32423 24.2575 8.20647 24.984 7.51706C25.7105 6.82765 26.8885 6.82765 27.6151 7.51706Z",
+      breakpoints: {
+        425: {
+          arrows: false
+        }
+      }
+    }).mount();
+  });
 } // =================================================
 
 

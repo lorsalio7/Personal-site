@@ -1,6 +1,8 @@
 {% include /top-catalog.html %}
   <body>
+    {% if site.metrika %}
     {% include /metrika.html %}
+    {% endif %}
     {% include /header.html %}
     <main class="main">
       <section class="post post--page">
@@ -16,8 +18,10 @@
       </section>
     </main>
     {% include /footer.html %}
+    {% if site.metrika %}
     <script src="js/cookieconsent.umd.js"></script>
     <script src="js/cookieconsent-config.js" type="module"></script>
+    {% endif %}
     <script src="js/script.min.js"></script>
   </body>
 </html>

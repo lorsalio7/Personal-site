@@ -3,6 +3,7 @@ description: Я профессионально занимаюсь верстко
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://sezak.ru" # the base hostname & protocol for your site, e.g. http://example.com
 
+metrika: true
 
 socials:
   telegram: https://t.me/sezak74
@@ -16,8 +17,12 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate-v2
+  - jekyll-toc
 
-plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate-v2]
+plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate-v2, jekyll-toc]
+
+toc:
+  ordered_list: true
 
 pagination:
   enabled: true

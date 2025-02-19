@@ -1,0 +1,48 @@
+{% include /top-services.html %}
+  <body>
+    {% if site.metrika %}
+    {% include /metrika.html %}
+    {% endif %}
+    {% include /header.html %}
+    <main class="main">
+      <div class="container container--article">
+        <article class="full-article">
+          <header class="full-article__header">
+            <h1 class="full-article__title">{{ page.title }}</h1>
+            <p class="full-article__info">
+              <span class="full-article__tag">#{{ page.tag }} /</span>
+              <time class="full-article__time" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d' }}.{{ page.date | date: '%m' }}.{{ page.date | date: '%Y' }}</time>
+            </p>
+            <a class="full-article__category-link" href="/services/">Услуги</a>
+          </header>
+          <picture>
+            <source srcset="{{ page.images.fullpost-webp }}" type="image/webp"><img class="full-article__image" loading="lazy" src="{{ page.images.fullpost-jpg }}" width="968" height="544" alt="{{ page.title }}">
+          </picture>
+          <div class="raw-content">
+            {% if page.toc %}
+            <div class="toc">
+              <h2>Содержание:</h2>
+              {% toc %}
+            </div>
+            {% endif %}
+            {{ content }}
+          </div>
+          {% include /share.html %}
+        </article>
+      </div>
+    </main>
+    {% include /footer.html %}
+    {% if page.code %}
+    <script src="/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    {% endif %}
+    {% if site.metrika %}
+    <script src="/js/cookieconsent.umd.js"></script>
+    <script src="/js/cookieconsent-config.js" type="module"></script>
+    {% endif %}
+    {% if page.slider %}
+    <script src="/js/splide.min.js" defer></script>
+    {% endif %}
+    <script src="/js/script.min.js" defer></script>
+  </body>
+</html>
