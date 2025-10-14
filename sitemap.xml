@@ -1,82 +1,79 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://sezak.ru/projects/2023/2023-03-12-landing-page-kreativnogo-agentstva-agency-creative/</loc>
-<lastmod>2023-03-12T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2023/2023-03-25-landing-page-cvetochnogo-magazina-vesna-vsegda/</loc>
-<lastmod>2023-03-25T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2023/2023-04-10-internet-magazin-dzhinsovoj-odezhdy-nimes/</loc>
-<lastmod>2023-04-10T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2023/2023-06-17-landing-page-personalnoe-portfolio-jacob-jones/</loc>
-<lastmod>2023-06-17T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2023/2023-07-28-mnogostranichnyj-blog-the-blog/</loc>
-<lastmod>2023-07-28T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2023/2023-09-22-verstka-sajta-gostinicy-dlya-koshek-kotejka/</loc>
-<lastmod>2023-09-22T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2023/2023-12-01-verstka-internet-magazina-shopco/</loc>
-<lastmod>2023-12-01T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2024/2024-01-30-verstka-lendinga-kofeen-dlya-studentov-molecule/</loc>
-<lastmod>2024-01-30T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2024/2024-05-17-verstka-landing-page-tsentra-yogi-lotos/</loc>
-<lastmod>2024-05-17T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/projects/2024/2024-07-04-verstka-sayta-turisticheskih-pohodov-lifetour/</loc>
-<lastmod>2024-07-04T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/blog/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/</loc>
-<lastmod>2024-08-01T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/blog/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/</loc>
-<lastmod>2024-08-02T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/blog/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/</loc>
-<lastmod>2024-08-16T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/</loc>
-<lastmod>2024-09-08T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/services/2025-02-18-otrisovka-rastrovyh-logotipov-i-ikonok-v-svg/</loc>
-<lastmod>2025-02-18T00:00:00+05:00</lastmod>
-</url>
-<url>
-<loc>https://sezak.ru/</loc>
-</url>
-<url>
-<loc>https://sezak.ru/services/</loc>
-</url>
-<url>
-<loc>https://sezak.ru/projects/</loc>
-</url>
-<url>
-<loc>https://sezak.ru/projects/page2/</loc>
-</url>
-<url>
-<loc>https://sezak.ru/blog/</loc>
-</url>
-<url>
-<loc>https://sezak.ru/policy/</loc>
-<lastmod>2023-10-31T16:27:33+05:00</lastmod>
-</url>
+  <url>
+    <loc>https://sezak.ru/projects/2023/2023-03-12-landing-page-kreativnogo-agentstva-agency-creative/</loc>
+    <lastmod>2023-03-12T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2023/2023-03-25-landing-page-cvetochnogo-magazina-vesna-vsegda/</loc>
+    <lastmod>2023-03-25T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2023/2023-04-10-internet-magazin-dzhinsovoj-odezhdy-nimes/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2023/2023-06-17-landing-page-personalnoe-portfolio-jacob-jones/</loc>
+    <lastmod>2023-06-17T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2023/2023-07-28-mnogostranichnyj-blog-the-blog/</loc>
+    <lastmod>2023-07-28T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2023/2023-09-22-verstka-sajta-gostinicy-dlya-koshek-kotejka/</loc>
+    <lastmod>2023-09-22T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2023/2023-12-01-verstka-internet-magazina-shopco/</loc>
+    <lastmod>2023-12-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2024/2024-01-30-verstka-lendinga-kofeen-dlya-studentov-molecule/</loc>
+    <lastmod>2024-01-30T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2024/2024-05-17-verstka-landing-page-tsentra-yogi-lotos/</loc>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/2024/2024-07-04-verstka-sayta-turisticheskih-pohodov-lifetour/</loc>
+    <lastmod>2024-07-04T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/blog/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/</loc>
+    <lastmod>2024-08-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/blog/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/blog/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/</loc>
+    <lastmod>2024-08-16T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/blog/2024-09-08-spetsialnye-simvoly-html-i-css/</loc>
+    <lastmod>2024-09-08T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/services/2025-02-18-otrisovka-rastrovyh-logotipov-i-ikonok-v-svg/</loc>
+    <lastmod>2025-02-18T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/</loc>
+    <lastmod>2025-10-05T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/projects/</loc>
+    <lastmod>2025-10-09T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/services/</loc>
+    <lastmod>2025-10-11T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://sezak.ru/blog/</loc>
+    <lastmod>2025-10-12T00:00:00+00:00</lastmod>
+  </url>
 </urlset>

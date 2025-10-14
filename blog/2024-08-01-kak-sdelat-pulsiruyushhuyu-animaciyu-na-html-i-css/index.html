@@ -5,113 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/">
+    <title>Как сделать пульсирующую анимацию на HTML и CSS</title>
     <link rel="icon" type="image/svg+xml" href="/favicon-light.svg">
 <link rel="icon" type="image/png" href="/favicon-light.png">
+    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM"/>
+<meta name="yandex-verification" content="c0984db1dbcd9786"/>
+    <meta name="generator" content="Eleventy v2.0.1"/>
+
+  
+    <meta property="og:title" content="Как сделать пульсирующую анимацию на HTML и CSS"/>
+  
+  <meta property="og:url" content="https://sezak.ru/blog/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="description" content="Подробное руководство по созданию пульсирующей анимации для кнопки на HTML и CSS"/>
+  <meta property="og:description" content="Подробное руководство по созданию пульсирующей анимации для кнопки на HTML и CSS"/>
+  <meta name="twitter:card" content="summary"/>
+  
     
-    <title>Как сделать пульсирующую анимацию на HTML и CSS</title>
-    <meta name="generator" content="Jekyll v4.3.2" />
+    <meta property="twitter:title" content="Как сделать пульсирующую анимацию на HTML и CSS"/>
+  
 
-<meta property="og:title" content="Как сделать пульсирующую анимацию на HTML и CSS" />
-<meta property="og:url" content="https://sezak.ru/blog/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/" />
-<meta property="og:type" content="website" />
-<meta name="description" content="Подробное руководство по созданию пульсирующей анимации для кнопки на HTML и CSS" />
-<meta property="og:description" content="Подробное руководство по созданию пульсирующей анимации для кнопки на HTML и CSS" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Как сделать пульсирующую анимацию на HTML и CSS" />
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова"/>
 
+  <meta property="og:image" content="https://sezak.ru/images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/1.jpg">
 
-<meta property="og:locale" content="ru_RU" />
-<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова" />
-<meta property="og:type" content="website" />
+    <script>
+  (function deleteAllSiteDataExceptTheme() {
+    console.log("🧹 Очистка cookies и storage, кроме dark-theme...");
 
-<meta property="og:image" content="https://sezak.ru/images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/1.jpg">
+    // --- Удаляем все cookies ---
+    const cookies = document
+      .cookie
+      .split(";");
+    for (let cookie of cookies) {
+      const eqPos = cookie.indexOf("=");
+      const name = eqPos > -1
+        ? cookie
+          .substr(0, eqPos)
+          .trim()
+        : cookie.trim();
 
-    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM" />
-    <meta name="yandex-verification" content="c0984db1dbcd9786" />
+      // Удаляем cookie для домена и поддоменов
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window
+        .location
+        .hostname
+        .replace(/^www\./, '') + ";";
+    }
+
+    // --- Сохраняем значение темы, если есть ---
+    let darkThemeValue = null;
+    try {
+      darkThemeValue = localStorage.getItem("dark-theme");
+    } catch (e) {
+      console.warn("Не удалось прочитать dark-theme:", e);
+    }
+
+    // --- Очищаем localStorage ---
+    try {
+      localStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке localStorage:", e);
+    }
+
+    // --- Восстанавливаем dark-theme ---
+    if (darkThemeValue !== null) {
+      try {
+        localStorage.setItem("dark-theme", darkThemeValue);
+      } catch (e) {
+        console.warn("Не удалось восстановить dark-theme:", e);
+      }
+    }
+
+    // --- Очищаем sessionStorage ---
+    try {
+      sessionStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке sessionStorage:", e);
+    }
+
+    console.log("✅ Очистка завершена (dark-theme сохранён)");
+  })();
+</script>
+    <script>
+  <!-- Скрипт предотвращающий «мигание темы» (FOUC: flash of unstyled content) -->
+(function () {try {var saved = localStorage.getItem("dark-theme");
+if (saved === "true") {document.documentElement.classList.add("dark-theme");}} catch (e) {}})();
+</script>
     
-    <link rel="stylesheet" href="css/highlight.min.css">
-    
-    
-    <link rel="stylesheet" href="css/cookieconsent.css">
+      <link rel="stylesheet" href="css/highlight.min.css">
     
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body>
-    
-    <!-- yandex metrika -->
-<script type="text/plain" data-cookie-consent="strictly-necessary" data-category="analytics" data-service="Yandex Metrika">
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  
-   ym(93403533, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<!-- end of yandex metrika-->
-<noscript>
-  <div>
-    <img src="https://mc.yandex.ru/watch/93403533" style="position:absolute; left:-9999px;" alt="">
-  </div>
-</noscript>
-<span class="overlay"></span>
-    
-    <header class="main-header">
+<body>
+  <header class="main-header">
   <div class="container main-header__container">
     <nav class="main-header__navigation">
-      <a class="site-logo" href="/">
-        <svg class="site-logo__image" width="43" height="48">
-          <use xlink:href="/img/sprite.svg#header-logo"></use>
-        </svg>
-      </a>
+      
+        <a class="site-logo" href="/">
+          <svg class="site-logo__image" width="43" height="48">
+            <use xlink:href="/img/sprite.svg#header-logo"></use>
+          </svg>
+        </a>
+      
       <button class="theme-button" type="button" title="Сменить тему сайта">
         <span class="theme-button__switch-slider"></span>
       </button>
     </nav>
   </div>
 </header>
-    <main class="main">
-      <div class="container container--article">
-        <article class="full-article">
-          <header class="full-article__header">
-            <h1 class="full-article__title">Как сделать пульсирующую анимацию на HTML и CSS</h1>
-            <p class="full-article__info">
-              <span class="full-article__tag">#верстка /</span>
-              <time class="full-article__time" datetime="2024-08-01">01.08.2024</time>
-            </p>
-            <a class="full-article__category-link" href="/blog/">Блог</a>
-          </header>
-          <picture>
-            <source srcset="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/1.webp" type="image/webp"><img class="full-article__image" loading="lazy" src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/1.jpg" width="968" height="544" alt="Как сделать пульсирующую анимацию на HTML и CSS">
-          </picture>
-          <div class="raw-content">
-            <p>Для того чтобы сделать красивую пульсирующую анимацию нам понадобиться сделать простую разметку, для наглядности я вставил нужный нам элемент(кнопку button) в центровщик с классом center:</p>
-
+  <main class="main">
+    <div class="container container--article">
+      <article class="full-article">
+        <header class="full-article__header">
+          <h1 class="full-article__title">Как сделать пульсирующую анимацию на HTML и CSS</h1>
+          <p class="full-article__info">
+            <span class="full-article__tag">#верстка /</span>
+            <time class="full-article__time" datetime="2024-08-01">01.08.2024</time>
+          </p>
+          <a class="full-article__category-link" href="/blog/">Блог</a>
+        </header>
+        <picture>
+          <source srcset="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/1.webp" type="image/webp"><img class="full-article__image" src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/1.jpg" width="968" height="544" alt="Как сделать пульсирующую анимацию на HTML и CSS">
+        </picture>
+        <div class="raw-content">
+          <p>Для того чтобы сделать красивую пульсирующую анимацию нам понадобиться сделать простую разметку, для наглядности я вставил нужный нам элемент(кнопку button) в центровщик с классом center:</p>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="ru"&gt;
+&lt;html lang=&quot;ru&quot;&gt;
 &lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
   &lt;title&gt;Пульсирующая анимация&lt;/title&gt;
-  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
 &lt;/head&gt;
 &lt;body&gt;
 
-  &lt;div class="center"&gt;
-    &lt;button class="button" type="button"&gt;Pulse&lt;/button&gt;
+  &lt;div class=&quot;center&quot;&gt;
+    &lt;button class=&quot;button&quot; type=&quot;button&quot;&gt;Pulse&lt;/button&gt;
   &lt;/div&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-
 <p>и стили для выравнивания по-центру, установив высоту в 100vh для flex-контейнера:</p>
-
 <pre><code class="language-css">.center {
   height: 100vh;
   display: -webkit-box;
@@ -125,9 +163,7 @@
   align-items: center;
 }
 </code></pre>
-
 <p>далее оформим кнопку задав ей размер, цвет, радиус закругления, уберем бордер и установим позиционирование relative которое нам понадобиться для выравнивания псевдоэлементов относительно нашей кнопки:</p>
-
 <pre><code class="language-css">.button {
   width: 50px;
   height: 50px;
@@ -138,20 +174,17 @@
   position: relative;
 }
 </code></pre>
-
-<h2>Оформление пульсирующих волн</h2>
+<h2>Оформление пульсирующих волн</h2> 
 <ul>
   <li>зададим размеры и радиус закругления наследуемые от родителя;</li>
   <li>выставим абсолютное позиционирование с верхнего левого угла;</li>
   <li>z-index укажем: -1, чтобы псевдоэлементы были позади кнопки;</li>
   <li>напишем свойство отвечающее за анимацию(animation) элемента - длительность 2 секунды, функция времени: ease, и укажем бесконечный повтор(infinite);</li>
 </ul>
-
 <p>Для <b>::after</b> правила будут те же что и для <b>::before</b>, за исключением для <b>::after</b> дополнительно укажем время задержки(animation-delay: 0.3s) анимации, чтобы разделить пульсации элементов.</p>
-
 <pre><code class="language-css">
 .button::before {
-  content: "";
+  content: &quot;&quot;;
   width: inherit;
   height: inherit;
   position: absolute;
@@ -165,7 +198,7 @@
 }
 
 .button::after {
-  content: "";
+  content: &quot;&quot;;
   width: inherit;
   height: inherit;
   position: absolute;
@@ -180,10 +213,8 @@
   animation-delay: 0.3s;
 }
 </code></pre>
-
 <h2>Напишем анимацию pulse.</h2>
-<p>Сама анимация очень простая состоящая из двух свойств - transform и opacity. На первом этапе элемент слегка сжимается, а на втором увеличивается в 2.5 раза(вы можете указать любой размер) и одновременно плавно становиться непрозрачным.</p>
-
+Сама анимация очень простая состоящая из двух свойств - transform и opacity. На первом этапе элемент слегка сжимается, а на втором увеличивается в 2.5 раза(вы можете указать любой размер) и одновременно плавно становиться непрозрачным.
 <pre><code class="language-css">@-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(0.9);
@@ -211,13 +242,10 @@
   }
 }
 </code></pre>
-
 <p>Что в итоге у нас должно получиться:</p>
-
-<p><img src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/pulsation.gif" alt="Пульсирующая анимация на HTML и CSS" width="400" height="300" loading="lazy" /></p>
-
-          </div>
-          <div class="full-article__share share">
+<img src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/pulsation.gif" alt="Пульсирующая анимация на HTML и CSS" width="400" height="300" loading="lazy">
+        </div>
+        <div class="full-article__share share">
   <p class="share__text">Сохранить в:</p>
   <ul class="share__list">
     <li class="share__item">
@@ -257,68 +285,70 @@
     </li>
   </ul>
 </div>
-        </article>
-      </div>
-      <section class="prev-next">
-  <h2 class="visually-hidden">Смотрите ещё:</h2>
-  <div class="container prev-next__container">
-    
-
-
-  
-
-  
-
-  
-
-  
-    
-    
-    
-      
-
-      <article class="prev-next__article">
-        <div class="prev-next__image-wrapper">
-          <picture>
-            <source srcset="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/thumb-post.webp" type="image/webp">
-            <img class="prev-next__image" loading="lazy" src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/thumb-post.jpg" width="248" height="140" alt="Как сделать градиентный текст на css и анимировать его">
-          </picture>
-        </div>
-        <div class="prev-next__text">
-          <span class="prev-next__indicator">НАЗАД</span>
-          <h3 class="prev-next__title">
-            <a class="prev-next__link" href="/blog/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/">
-              <span>Как сделать градиентный текст на css и анимировать его</span>
-            </a>
-          </h3>
-        </div>
       </article>
-      
+    </div>
     
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  <section class="prev-next">
+    <h2 class="visually-hidden">Смотрите ещё:</h2>
+    <div class="container prev-next__container">
+
+      
+        <article class="prev-next__article">
+          <div class="prev-next__image-wrapper">
+            <picture>
+              <source srcset="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/thumb-post.webp" type="image/webp">
+              <img class="prev-next__image" loading="lazy" src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/thumb-post.jpg" width="248" height="140" alt="Как сделать градиентный текст на css и анимировать его">
+            </picture>
+          </div>
+          <div class="prev-next__text">
+            <span class="prev-next__indicator">НАЗАД</span>
+            <h3 class="prev-next__title">
+              <a class="prev-next__link" href="/blog/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/">
+                <span>Как сделать градиентный текст на css и анимировать его</span>
+              </a>
+            </h3>
+          </div>
+        </article>
+      
+      
+
     
   </div>
 </section>
-    </main>
-    <footer class="main-footer">
+  </main>
+  <footer class="main-footer">
   <div class="container main-footer__container">
-    <a class="site-logo main-footer__logo" href="/">
-      <svg class="site-logo__image" width="43" height="48">
-        <use xlink:href="/img/sprite.svg#header-logo"></use>
-      </svg>
-    </a>
+    
+      <a class="site-logo main-footer__logo" href="/">
+        <svg class="site-logo__image" width="43" height="48">
+          <use xlink:href="/img/sprite.svg#header-logo"></use>
+        </svg>
+      </a>
+    
     <a href="/services/" class="main-footer__copyright">Услуги</a>
     <p class="main-footer__copyright">&copy; <span class="main-footer__year"></span> sezak.ru все права защищены</p>
-    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://jekyllrb.com/" rel="nofollow noopener" target="_blank">Jekyll</a></p>
+    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://www.11ty.dev/" rel="nofollow noopener" target="_blank">11ty</a>
+    </p>
   </div>
 </footer>
-    
+  
     <script src="js/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    
-    
-    <script src="js/cookieconsent.umd.js"></script>
-    <script src="js/cookieconsent-config.js" type="module"></script>
-    
-    <script src="js/script.min.js" defer></script>
-  </body>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+  <script src="js/script.min.js" defer></script>
+</body>
 </html>

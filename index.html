@@ -8,93 +8,135 @@
     <title>Сайт-Портфолио html-верстальщика Сергея Закирова</title>
     <link rel="icon" type="image/svg+xml" href="/favicon-light.svg">
 <link rel="icon" type="image/png" href="/favicon-light.png">
-    
-    <meta name="generator" content="Jekyll v4.3.2" />
-
-<meta property="og:title" content="Сайт-Портфолио html-верстальщика Сергея Закирова" />
-<meta property="og:url" content="https://sezak.ru" />
-<meta property="og:type" content="website" />
-<meta name="description" content="Я профессионально занимаюсь версткой сайтов, адаптивно и кроссбраузерно. На этом сайте вы можете ознакомится со списком моего портфолио." />
-<meta property="og:description" content="Я профессионально занимаюсь версткой сайтов, адаптивно и кроссбраузерно. На этом сайте вы можете ознакомится со списком моего портфолио." />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Сайт-Портфолио html-верстальщика Сергея Закирова" />
+    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM"/>
+<meta name="yandex-verification" content="c0984db1dbcd9786"/>
+    <meta name="generator" content="Eleventy v2.0.1"/>
 
 
-<meta property="og:locale" content="ru_RU" />
-<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова" />
-<meta property="og:type" content="website" />
+  <meta property="og:title" content="Сайт-Портфолио html-верстальщика Сергея Закирова"/>
 
-<meta property="og:image" content="https://sezak.ru/img/imagehome.jpg">
+  <meta property="og:url" content="https://sezak.ru"/>
+  <meta property="og:type" content="website"/>
+  <meta name="description" content="Я профессионально занимаюсь версткой сайтов, адаптивно и кроссбраузерно. На этом сайте вы можете ознакомится со списком моего портфолио."/>
+  <meta property="og:description" content="Я профессионально занимаюсь версткой сайтов, адаптивно и кроссбраузерно. На этом сайте вы можете ознакомится со списком моего портфолио."/>
+  <meta name="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Сайт-Портфолио html-верстальщика Сергея Закирова"/>
 
-    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM" />
-    <meta name="yandex-verification" content="c0984db1dbcd9786" />
+
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова"/>
+
+  <meta property="og:image" content="https://sezak.ru/img/imagehome.jpg">
+
+    <script>
+  (function deleteAllSiteDataExceptTheme() {
+    console.log("🧹 Очистка cookies и storage, кроме dark-theme...");
+
+    // --- Удаляем все cookies ---
+    const cookies = document
+      .cookie
+      .split(";");
+    for (let cookie of cookies) {
+      const eqPos = cookie.indexOf("=");
+      const name = eqPos > -1
+        ? cookie
+          .substr(0, eqPos)
+          .trim()
+        : cookie.trim();
+
+      // Удаляем cookie для домена и поддоменов
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window
+        .location
+        .hostname
+        .replace(/^www\./, '') + ";";
+    }
+
+    // --- Сохраняем значение темы, если есть ---
+    let darkThemeValue = null;
+    try {
+      darkThemeValue = localStorage.getItem("dark-theme");
+    } catch (e) {
+      console.warn("Не удалось прочитать dark-theme:", e);
+    }
+
+    // --- Очищаем localStorage ---
+    try {
+      localStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке localStorage:", e);
+    }
+
+    // --- Восстанавливаем dark-theme ---
+    if (darkThemeValue !== null) {
+      try {
+        localStorage.setItem("dark-theme", darkThemeValue);
+      } catch (e) {
+        console.warn("Не удалось восстановить dark-theme:", e);
+      }
+    }
+
+    // --- Очищаем sessionStorage ---
+    try {
+      sessionStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке sessionStorage:", e);
+    }
+
+    console.log("✅ Очистка завершена (dark-theme сохранён)");
+  })();
+</script>
+    <script>
+  <!-- Скрипт предотвращающий «мигание темы» (FOUC: flash of unstyled content) -->
+(function () {try {var saved = localStorage.getItem("dark-theme");
+if (saved === "true") {document.documentElement.classList.add("dark-theme");}} catch (e) {}})();
+</script>
+
     <link rel="canonical" href="https://sezak.ru/">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link rel="stylesheet" href="css/splide.min.css">
-    
-    <link rel="stylesheet" href="css/cookieconsent.css">
-    
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body>
-    
-      <!-- yandex metrika -->
-<script type="text/plain" data-cookie-consent="strictly-necessary" data-category="analytics" data-service="Yandex Metrika">
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  
-   ym(93403533, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<!-- end of yandex metrika-->
-<noscript>
-  <div>
-    <img src="https://mc.yandex.ru/watch/93403533" style="position:absolute; left:-9999px;" alt="">
-  </div>
-</noscript>
-<span class="overlay"></span>
-    
-    <header class="main-header">
+<body>
+  <header class="main-header">
   <div class="container main-header__container">
     <nav class="main-header__navigation">
-      <a class="site-logo" >
-        <svg class="site-logo__image" width="43" height="48">
-          <use xlink:href="/img/sprite.svg#header-logo"></use>
-        </svg>
-      </a>
+      
+        <a class="site-logo">
+          <svg class="site-logo__image" width="43" height="48">
+            <use xlink:href="/img/sprite.svg#header-logo"></use>
+          </svg>
+        </a>
+      
       <button class="theme-button" type="button" title="Сменить тему сайта">
         <span class="theme-button__switch-slider"></span>
       </button>
     </nav>
   </div>
 </header>
-    <main class="main" itemscope itemtype="http://schema.org/Person">
-      <h1 class="visually-hidden"><span itemprop="name">Сергей Закиров</span> - <span itemprop="jobTitle">Верстальщик сайтов</span></h1>
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="hero__content">
-            <h2 class="visually-hidden">Кто я</h2>
-            <meta itemprop="url" content="https://sezak.ru">
-            <img class="hero__image" src="img/avatar.svg" width="142" height="142" alt="Аватар Сергея">
-            <meta itemprop="image" content="https://sezak.ru/img/avatar.svg">
-            <p class="hero__heading">Здравствуйте! Меня зовут Сергей, я занимаюсь версткой сайтов</p>
-            <p class="hero__description">Здесь вы можете ознакомиться с моими работами и связаться со мной.</p>
-            <div class="hero__buttons">
-              <a class="button" href="/projects/">Портфолио</a>
-              <a class="button button--secondary" href="#contacts">Контакты</a></div>
+  <main class="main" itemscope itemtype="http://schema.org/Person">
+    <h1 class="visually-hidden">
+      <span itemprop="name">Сергей Закиров</span> - <span itemprop="jobTitle">Верстальщик сайтов</span></h1>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h2 class="visually-hidden">Кто я</h2>
+          <meta itemprop="url" content="https://sezak.ru">
+          <img class="hero__image" src="img/avatar.svg" width="142" height="142" alt="Аватар Сергея">
+          <meta itemprop="image" content="https://sezak.ru/img/avatar.svg">
+          <p class="hero__heading">Здравствуйте! Меня зовут Сергей, я занимаюсь версткой сайтов</p>
+          <p class="hero__description">Здесь вы можете ознакомиться с моими работами и связаться со мной.</p>
+          <div class="hero__buttons">
+            <a class="button" href="/projects/">Портфолио</a>
+            <a class="button button--secondary" href="#contacts">Контакты</a>
           </div>
         </div>
-      </section>
-<section class="about">
+      </div>
+    </section>
+    <section class="about">
   <div class="container about__container">
     <h2 class="about__title">Обо мне</h2>
-    <p class="about__description" itemprop="description">Я HTML-верстальщик, мне 33 года, создаю адаптивно-отзывчивые сайты из макетов Figma, Photoshop. Имею большой опыт работы с векторными иконками, хорошо владею Affinity Designer(векторный редактор), Affinity Photo(растровый редактор). Если в макете используются растровые иконки, логотипы я перерисовываю их в svg-формат.</p>
+    <p class="about__description" itemprop="description">Я HTML-верстальщик, мне 34 года, создаю адаптивно-отзывчивые сайты из макетов Figma, Photoshop. Имею большой опыт работы с векторными иконками, хорошо владею Affinity Designer(векторный редактор), Affinity Photo(растровый редактор). Если в макете используются растровые иконки, логотипы я перерисовываю их в svg-формат.</p>
     <p class="about__description">В дальнейших планах хочу изучить Wordpress и веб-дизайн.</p>
     <h3 class="about__subtitle">Профессиональные навыки</h3>
     <ul class="about__list about-list">
@@ -131,7 +173,7 @@
     </ul>
   </div>
 </section>
-<section class="certificates">
+    <section class="certificates">
   <div class="container certificates__container">
     <h2 class="certificates__title">Сертификаты</h2>
     <div class="gallery gallery-certificates">
@@ -144,7 +186,7 @@
     </div>
   </div>
 </section>
-<section class="services">
+    <section class="services">
   <div class="container services__container">
     <h2 class="services__title">Услуги</h2>
     <ul class="services__list">
@@ -211,15 +253,15 @@
     </ul>
   </div>
 </section>
-      <section class="post">
-        <div class="container post__container">
-          <h2 class="post__title">Последние работы</h2>
-          <div class="post__list">
-            
+    <section class="post">
+      <div class="container post__container">
+        <h2 class="post__title">Последние работы</h2>
+        <div class="post__list">
+          
             <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-07-04-verstka-sayta-turisticheskih-pohodov-lifetour/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-07-04-verstka-sayta-turisticheskih-pohodov-lifetour/small-post.jpg" width="436" height="244" alt="Верстка сайта туристических походов Lifetour">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-07-04-verstka-sayta-turisticheskih-pohodov-lifetour/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -233,11 +275,11 @@
     </p>
   </div>
 </article>
-            
+          
             <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-05-17-verstka-landing-page-tsentra-yogi-lotos/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-05-17-verstka-landing-page-tsentra-yogi-lotos/small-post.jpg" width="436" height="244" alt="Верстка landing-page центра йоги - Lotos">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-05-17-verstka-landing-page-tsentra-yogi-lotos/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -251,20 +293,20 @@
     </p>
   </div>
 </article>
-            
-          </div>
-          <div class="post__button">
-            <a class="button" href="/projects/" title="Все работы">Все работы</a>
-          </div>
+          
         </div>
-      </section>
-      <section class="technology">
-        <h2 class="visually-hidden">Технологие используемые мной в работе</h2>
-        <div class="container technology__container">
-          <div class="splide technology__slider technology-slider">
-            <div class="splide__track technology-slider__wrapper">
-              <ul class="splide__list">
-                <div class="splide__slide technology-slider__slide" title="BEM">
+        <div class="post__button">
+          <a class="button" href="/projects/" title="Все работы">Все работы</a>
+        </div>
+      </div>
+    </section>
+    <section class="technology">
+      <h2 class="visually-hidden">Технологие используемые мной в работе</h2>
+      <div class="container technology__container">
+        <div class="splide technology__slider technology-slider">
+          <div class="splide__track technology-slider__wrapper">
+            <ul class="splide__list">
+              <div class="splide__slide technology-slider__slide" title="BEM">
   <svg class="technology-slider__icon" width="70" height="70">
     <use xlink:href="img/sprite.svg#bem-ic"></use>
   </svg>
@@ -304,20 +346,20 @@
     <use xlink:href="img/sprite.svg#svg-ic"></use>
   </svg>
 </div>
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
-      </section>
-      <section class="post">
-        <div class="container post__container">
-          <h2 class="post__title">Блог</h2>
-          <div class="post__list">
-            
+      </div>
+    </section>
+    <section class="post">
+      <div class="container post__container">
+        <h2 class="post__title">Блог</h2>
+        <div class="post__list">
+          
             <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/small-post.jpg" width="436" height="244" alt="Специальные символы html и css">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -331,11 +373,11 @@
     </p>
   </div>
 </article>
-            
+          
             <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/small-post.jpg" width="436" height="244" alt="Как сделать бургер кнопку на css с анимацией">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -349,14 +391,14 @@
     </p>
   </div>
 </article>
-            
-          </div>
-          <div class="post__button">
-            <a class="button" href="/blog/" title="Все статьи">Все статьи</a>
-          </div>
+          
         </div>
-      </section>
-<section class="contacts" id="contacts">
+        <div class="post__button">
+          <a class="button" href="/blog/" title="Все статьи">Все статьи</a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
   <div class="container contacts__container">
     <h2 class="contacts__title">Контакты</h2>
     <div class="contacts__wrapper">
@@ -369,8 +411,12 @@
       <div class="contacts-item contacts__item">
         <div class="contacts-item__wrapper">
           <p class="contacts-item__title">Время работы:</p>
-          <p class="contacts-item__row"><span class="contacts-item__days">Пн-Пт:</span><span class="contacts-item__time">7:00 - 16:00 Мск</span></p>
-          <p class="contacts-item__row"><span class="contacts-item__days">Сб-Вс:</span><span class="contacts-item__time">Только консультации</span></p>
+          <p class="contacts-item__row">
+            <span class="contacts-item__days">Пн-Пт:</span>
+            <span class="contacts-item__time">7:00 - 16:00 Мск</span></p>
+          <p class="contacts-item__row">
+            <span class="contacts-item__days">Сб-Вс:</span>
+            <span class="contacts-item__time">Только консультации</span></p>
           <div class="contacts-list">
             <p class="contacts-list__item">
               <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
@@ -403,26 +449,25 @@
     </div>
   </div>
 </section>
-    </main>
-    <footer class="main-footer">
+  </main>
+  <footer class="main-footer">
   <div class="container main-footer__container">
-    <a class="site-logo main-footer__logo" >
-      <svg class="site-logo__image" width="43" height="48">
-        <use xlink:href="/img/sprite.svg#header-logo"></use>
-      </svg>
-    </a>
+    
+      <a class="site-logo main-footer__logo">
+        <svg class="site-logo__image" width="43" height="48">
+          <use xlink:href="/img/sprite.svg#header-logo"></use>
+        </svg>
+      </a>
+    
     <a href="/services/" class="main-footer__copyright">Услуги</a>
     <p class="main-footer__copyright">&copy; <span class="main-footer__year"></span> sezak.ru все права защищены</p>
-    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://jekyllrb.com/" rel="nofollow noopener" target="_blank">Jekyll</a></p>
+    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://www.11ty.dev/" rel="nofollow noopener" target="_blank">11ty</a>
+    </p>
   </div>
 </footer>
-    <script src="js/baguetteBox.min.js" defer></script>
-    <script src="js/splide.min.js" defer></script>
-    <script src="js/splide-extension-auto-scroll.min.js" defer></script>
-    
-    <script src="js/cookieconsent.umd.js"></script>
-    <script src="js/cookieconsent-config.js" type="module"></script>
-    
-    <script src="js/script.min.js" defer></script>
-  </body>
+  <script src="js/baguetteBox.min.js" defer></script>
+  <script src="js/splide.min.js" defer></script>
+  <script src="js/splide-extension-auto-scroll.min.js" defer></script>
+  <script src="js/script.min.js" defer></script>
+</body>
 </html>

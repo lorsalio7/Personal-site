@@ -122,11 +122,11 @@ if (footerYear) {
 } // =================================================
 
 
-var toc = document.getElementById("toc");
+var toc = document.querySelector(".toc__navigation");
 
 if (toc) {
   var currentURL = document.location.href.replace(/#.*$/, "");
-  var tocLinks = toc.querySelectorAll(".toc-entry a");
+  var tocLinks = toc.querySelectorAll(".toc__navigation a");
 
   for (var i = 0; i < tocLinks.length; i++) {
     var link = tocLinks[i];

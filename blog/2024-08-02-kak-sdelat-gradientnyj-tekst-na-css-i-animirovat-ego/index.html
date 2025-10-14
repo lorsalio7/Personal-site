@@ -5,99 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/">
+    <title>Как сделать градиентный текст на css и анимировать его</title>
     <link rel="icon" type="image/svg+xml" href="/favicon-light.svg">
 <link rel="icon" type="image/png" href="/favicon-light.png">
+    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM"/>
+<meta name="yandex-verification" content="c0984db1dbcd9786"/>
+    <meta name="generator" content="Eleventy v2.0.1"/>
+
+  
+    <meta property="og:title" content="Как сделать градиентный текст на css и анимировать его"/>
+  
+  <meta property="og:url" content="https://sezak.ru/blog/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="description" content="Небольшое руководство о том как легко сделать буквально в несколько строк градиентный текст, который часто встречается на различных сайтах и анимируем его"/>
+  <meta property="og:description" content="Небольшое руководство о том как легко сделать буквально в несколько строк градиентный текст, который часто встречается на различных сайтах и анимируем его"/>
+  <meta name="twitter:card" content="summary"/>
+  
     
-    <title>Как сделать градиентный текст на css и анимировать его</title>
-    <meta name="generator" content="Jekyll v4.3.2" />
+    <meta property="twitter:title" content="Как сделать градиентный текст на css и анимировать его"/>
+  
 
-<meta property="og:title" content="Как сделать градиентный текст на css и анимировать его" />
-<meta property="og:url" content="https://sezak.ru/blog/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/" />
-<meta property="og:type" content="website" />
-<meta name="description" content="Небольшое руководство о том как легко сделать буквально в несколько строк градиентный текст, который часто встречается на различных сайтах и анимируем его" />
-<meta property="og:description" content="Небольшое руководство о том как легко сделать буквально в несколько строк градиентный текст, который часто встречается на различных сайтах и анимируем его" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Как сделать градиентный текст на css и анимировать его" />
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова"/>
 
+  <meta property="og:image" content="https://sezak.ru/images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/1.jpg">
 
-<meta property="og:locale" content="ru_RU" />
-<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова" />
-<meta property="og:type" content="website" />
+    <script>
+  (function deleteAllSiteDataExceptTheme() {
+    console.log("🧹 Очистка cookies и storage, кроме dark-theme...");
 
-<meta property="og:image" content="https://sezak.ru/images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/1.jpg">
+    // --- Удаляем все cookies ---
+    const cookies = document
+      .cookie
+      .split(";");
+    for (let cookie of cookies) {
+      const eqPos = cookie.indexOf("=");
+      const name = eqPos > -1
+        ? cookie
+          .substr(0, eqPos)
+          .trim()
+        : cookie.trim();
 
-    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM" />
-    <meta name="yandex-verification" content="c0984db1dbcd9786" />
+      // Удаляем cookie для домена и поддоменов
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window
+        .location
+        .hostname
+        .replace(/^www\./, '') + ";";
+    }
+
+    // --- Сохраняем значение темы, если есть ---
+    let darkThemeValue = null;
+    try {
+      darkThemeValue = localStorage.getItem("dark-theme");
+    } catch (e) {
+      console.warn("Не удалось прочитать dark-theme:", e);
+    }
+
+    // --- Очищаем localStorage ---
+    try {
+      localStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке localStorage:", e);
+    }
+
+    // --- Восстанавливаем dark-theme ---
+    if (darkThemeValue !== null) {
+      try {
+        localStorage.setItem("dark-theme", darkThemeValue);
+      } catch (e) {
+        console.warn("Не удалось восстановить dark-theme:", e);
+      }
+    }
+
+    // --- Очищаем sessionStorage ---
+    try {
+      sessionStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке sessionStorage:", e);
+    }
+
+    console.log("✅ Очистка завершена (dark-theme сохранён)");
+  })();
+</script>
+    <script>
+  <!-- Скрипт предотвращающий «мигание темы» (FOUC: flash of unstyled content) -->
+(function () {try {var saved = localStorage.getItem("dark-theme");
+if (saved === "true") {document.documentElement.classList.add("dark-theme");}} catch (e) {}})();
+</script>
     
-    <link rel="stylesheet" href="css/highlight.min.css">
-    
-    
-    <link rel="stylesheet" href="css/cookieconsent.css">
+      <link rel="stylesheet" href="css/highlight.min.css">
     
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body>
-    
-    <!-- yandex metrika -->
-<script type="text/plain" data-cookie-consent="strictly-necessary" data-category="analytics" data-service="Yandex Metrika">
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  
-   ym(93403533, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<!-- end of yandex metrika-->
-<noscript>
-  <div>
-    <img src="https://mc.yandex.ru/watch/93403533" style="position:absolute; left:-9999px;" alt="">
-  </div>
-</noscript>
-<span class="overlay"></span>
-    
-    <header class="main-header">
+<body>
+  <header class="main-header">
   <div class="container main-header__container">
     <nav class="main-header__navigation">
-      <a class="site-logo" href="/">
-        <svg class="site-logo__image" width="43" height="48">
-          <use xlink:href="/img/sprite.svg#header-logo"></use>
-        </svg>
-      </a>
+      
+        <a class="site-logo" href="/">
+          <svg class="site-logo__image" width="43" height="48">
+            <use xlink:href="/img/sprite.svg#header-logo"></use>
+          </svg>
+        </a>
+      
       <button class="theme-button" type="button" title="Сменить тему сайта">
         <span class="theme-button__switch-slider"></span>
       </button>
     </nav>
   </div>
 </header>
-    <main class="main">
-      <div class="container container--article">
-        <article class="full-article">
-          <header class="full-article__header">
-            <h1 class="full-article__title">Как сделать градиентный текст на css и анимировать его</h1>
-            <p class="full-article__info">
-              <span class="full-article__tag">#верстка /</span>
-              <time class="full-article__time" datetime="2024-08-02">02.08.2024</time>
-            </p>
-            <a class="full-article__category-link" href="/blog/">Блог</a>
-          </header>
-          <picture>
-            <source srcset="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/1.webp" type="image/webp"><img class="full-article__image" loading="lazy" src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/1.jpg" width="968" height="544" alt="Как сделать градиентный текст на css и анимировать его">
-          </picture>
-          <div class="raw-content">
-            <p>Нам понадобится сделать простую разметку:</p>
-
+  <main class="main">
+    <div class="container container--article">
+      <article class="full-article">
+        <header class="full-article__header">
+          <h1 class="full-article__title">Как сделать градиентный текст на css и анимировать его</h1>
+          <p class="full-article__info">
+            <span class="full-article__tag">#верстка /</span>
+            <time class="full-article__time" datetime="2024-08-02">02.08.2024</time>
+          </p>
+          <a class="full-article__category-link" href="/blog/">Блог</a>
+        </header>
+        <picture>
+          <source srcset="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/1.webp" type="image/webp"><img class="full-article__image" src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/1.jpg" width="968" height="544" alt="Как сделать градиентный текст на css и анимировать его">
+        </picture>
+        <div class="raw-content">
+          <p>Нам понадобится сделать простую разметку:</p>
 <pre><code class="language-html">&lt;body&gt;
-  &lt;p class="text"&gt;Градиентный текст&lt;/p&gt;
+  &lt;p class=&quot;text&quot;&gt;Градиентный текст&lt;/p&gt;
 &lt;/body&gt;
 </code></pre>
-
 <p>Весь остальной код будет в CSS. Для начала оформим текст необязательными свойствами: установим шрифт без засечек, т.к. я выбрал тег &lt;p&gt; для обертки текста нам нужно будет его преобразовать в строчно-блочный элемент, чтобы правильно отображался градиент, и зададим размер текста в 80 пикселей:</p>
-
 <pre><code class="language-css">.text {
   font-family: Inter, sans-serif;
   text-transform: uppercase;
@@ -105,9 +143,7 @@
   font-size: 80px;
 }
 </code></pre>
-
 <p>Теперь зададим сам градиент нашему тексту, точнее фон</p>
-
 <pre><code class="language-css">.text {
   …
   background: -webkit-gradient(linear, right top, left top, from(#f1d335), color-stop(50%, #db01ff), to(#f1d335));
@@ -115,9 +151,7 @@
   background: linear-gradient(to left, #f1d335 0%, #db01ff 50%, #f1d335 100%);
 }
 </code></pre>
-
 <p>Установим два важных свойства, которые применят и обрежут градиент на нашем тексте:</p>
-
 <pre><code class="language-css">.text {
   …
   background-clip: text;
@@ -126,26 +160,20 @@
   -webkit-text-fill-color: transparent;
 }
 </code></pre>
-
 <p>Расширим фон текста на 200% чтобы анимация работала стабильно</p>
-
 <pre><code class="language-css">.text {
   …
   background-size: 200%;
 }
 </code></pre>
-
 <p>Зададим свойства анимации: назовём нашу анимацию animationGradient, время длительности 5 секунд, ускорение линейное, и количество итераций бесконечное:</p>
-
 <pre><code class="language-css">.text {
   …
   animation: animationGradient 5s linear infinite;
   -webkit-animation: animationGradient 5s linear infinite;
 }
 </code></pre>
-
 <p>Теперь сама анимация, которая будет основана на движении фона по оси X:</p>
-
 <pre><code class="language-css">@-webkit-keyframes animationGradient {
   0% {
     background-position: -100% 0%;
@@ -164,13 +192,11 @@
   }
 }
 </code></pre>
-
 <p>В итоге у нас должна получиться плавная анимация градиентного текста:</p>
+<img src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/result.gif" alt="Анимированный градентный текст на CSS" width="930" height="279" loading="lazy">
 
-<p><img src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/result.gif" alt="Анимированный градентный текст на CSS" width="930" height="279" loading="lazy" /></p>
-
-          </div>
-          <div class="full-article__share share">
+        </div>
+        <div class="full-article__share share">
   <p class="share__text">Сохранить в:</p>
   <ul class="share__list">
     <li class="share__item">
@@ -210,84 +236,86 @@
     </li>
   </ul>
 </div>
-        </article>
-      </div>
-      <section class="prev-next">
-  <h2 class="visually-hidden">Смотрите ещё:</h2>
-  <div class="container prev-next__container">
-    
-
-
-  
-
-  
-
-  
-    
-    
-    
-      
-
-      <article class="prev-next__article">
-        <div class="prev-next__image-wrapper">
-          <picture>
-            <source srcset="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/thumb-post.webp" type="image/webp">
-            <img class="prev-next__image" loading="lazy" src="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/thumb-post.jpg" width="248" height="140" alt="Как сделать бургер кнопку на css с анимацией">
-          </picture>
-        </div>
-        <div class="prev-next__text">
-          <span class="prev-next__indicator">НАЗАД</span>
-          <h3 class="prev-next__title">
-            <a class="prev-next__link" href="/blog/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/">
-              <span>Как сделать бургер кнопку на css с анимацией</span>
-            </a>
-          </h3>
-        </div>
       </article>
-      
+    </div>
     
+
+
+
+
+  
+
+
+
+
+  
+  
+
+  <section class="prev-next">
+    <h2 class="visually-hidden">Смотрите ещё:</h2>
+    <div class="container prev-next__container">
+
+      
+        <article class="prev-next__article">
+          <div class="prev-next__image-wrapper">
+            <picture>
+              <source srcset="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/thumb-post.webp" type="image/webp">
+              <img class="prev-next__image" loading="lazy" src="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/thumb-post.jpg" width="248" height="140" alt="Как сделать бургер кнопку на css с анимацией">
+            </picture>
+          </div>
+          <div class="prev-next__text">
+            <span class="prev-next__indicator">НАЗАД</span>
+            <h3 class="prev-next__title">
+              <a class="prev-next__link" href="/blog/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/">
+                <span>Как сделать бургер кнопку на css с анимацией</span>
+              </a>
+            </h3>
+          </div>
+        </article>
+      
+      
+        <article class="prev-next__article prev-next__article--reverse">
+          <div class="prev-next__image-wrapper">
+            <picture>
+              <source srcset="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/thumb-post.webp" type="image/webp"><img class="prev-next__image" loading="lazy" src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/thumb-post.jpg" width="248" height="140" alt="Как сделать пульсирующую анимацию на HTML и CSS">
+            </picture>
+          </div>
+          <div class="prev-next__text">
+            <span class="prev-next__indicator">ВПЕРЕД</span>
+            <h3 class="prev-next__title">
+              <a class="prev-next__link" href="/blog/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/">
+                <span>Как сделать пульсирующую анимацию на HTML и CSS</span>
+              </a>
+            </h3>
+          </div>
+        </article>
       
 
-    <article class="prev-next__article prev-next__article--reverse">
-      <div class="prev-next__image-wrapper">
-        <picture>
-          <source srcset="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/thumb-post.webp" type="image/webp"><img class="prev-next__image" loading="lazy" src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/thumb-post.jpg" width="248" height="140" alt="Как сделать пульсирующую анимацию на HTML и CSS">
-        </picture>
-      </div>
-      <div class="prev-next__text">
-        <span class="prev-next__indicator">ВПЕРЕД</span>
-        <h3 class="prev-next__title">
-          <a class="prev-next__link" href="/blog/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/">
-            <span>Как сделать пульсирующую анимацию на HTML и CSS</span>
-          </a>
-        </h3>
-      </div>
-    </article>
-    
     
   </div>
 </section>
-    </main>
-    <footer class="main-footer">
+  </main>
+  <footer class="main-footer">
   <div class="container main-footer__container">
-    <a class="site-logo main-footer__logo" href="/">
-      <svg class="site-logo__image" width="43" height="48">
-        <use xlink:href="/img/sprite.svg#header-logo"></use>
-      </svg>
-    </a>
+    
+      <a class="site-logo main-footer__logo" href="/">
+        <svg class="site-logo__image" width="43" height="48">
+          <use xlink:href="/img/sprite.svg#header-logo"></use>
+        </svg>
+      </a>
+    
     <a href="/services/" class="main-footer__copyright">Услуги</a>
     <p class="main-footer__copyright">&copy; <span class="main-footer__year"></span> sezak.ru все права защищены</p>
-    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://jekyllrb.com/" rel="nofollow noopener" target="_blank">Jekyll</a></p>
+    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://www.11ty.dev/" rel="nofollow noopener" target="_blank">11ty</a>
+    </p>
   </div>
 </footer>
-    
+  
     <script src="js/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    
-    
-    <script src="js/cookieconsent.umd.js"></script>
-    <script src="js/cookieconsent-config.js" type="module"></script>
-    
-    <script src="js/script.min.js" defer></script>
-  </body>
+    <script>
+      hljs.highlightAll();
+    </script>
+  
+  <script src="js/script.min.js" defer></script>
+</body>
 </html>
