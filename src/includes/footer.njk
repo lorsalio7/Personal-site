@@ -1,0 +1,21 @@
+<footer class="main-footer">
+  <div class="container main-footer__container">
+    {% if page | isHomePage %}
+      <a class="site-logo main-footer__logo">
+        <svg class="site-logo__image" width="43" height="48">
+          <use xlink:href="/img/sprite.svg#header-logo"></use>
+        </svg>
+      </a>
+    {% else %}
+      <a class="site-logo main-footer__logo" href="/">
+        <svg class="site-logo__image" width="43" height="48">
+          <use xlink:href="/img/sprite.svg#header-logo"></use>
+        </svg>
+      </a>
+    {% endif %}
+    <a href="/services/" class="main-footer__copyright">Услуги</a>
+    <p class="main-footer__copyright">&copy; <span class="main-footer__year"></span> sezak.ru все права защищены</p>
+    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://www.11ty.dev/" rel="nofollow noopener" target="_blank">11ty</a>
+    </p>
+  </div>
+</footer>

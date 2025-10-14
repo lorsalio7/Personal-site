@@ -1,0 +1,17 @@
+<article class="post__item post-card">
+  <picture>
+    <source srcset="{{ post.data.images["smallpost-webp"] }}" type="image/webp">
+    <img class="post-card__image" loading="lazy" src="{{ post.data.images["smallpost-jpg"] }}" width="436" height="244" alt="{{ post.title }}">
+  </picture>
+  <div class="post-card__text-content">
+    <h3 class="post-card__title">
+      <a class="post-card__link" href="{{ post.url }}">
+        <span>{{ post.data.title }}</span>
+      </a>
+    </h3>
+    <p class="post-card__info">
+      <span class="post-card__tag">#{{ post.data.tag }} /</span>
+      <time class="post-card__time" datetime="{{ post.date | mapDate }}">{{ post.date | ruDate }}</time>
+    </p>
+  </div>
+</article>

@@ -1,0 +1,66 @@
+{# src/includes/prev-next.njk #}
+{% set currentCollection = false %}
+
+{# Определяем, к какой коллекции относится страница #}
+{% if page
+  .url
+  .indexOf('/projects/') != -1 %}
+  {% set currentCollection = collections.projects %}
+{% elif page
+    .url
+    .indexOf('/blog/') != -1 %}
+  {% set currentCollection = collections.blog %}
+{% elif page
+    .url
+    .indexOf('/services/') != -1 %}
+  {% set currentCollection = collections.services %}
+{% endif %}
+
+{# Если коллекция найдена — ищем предыдущий и следующий элементы #}
+{% if currentCollection %}
+  {% set previousPost = currentCollection | getNextCollectionItem(page) %}
+  {% set nextPost = currentCollection | getPreviousCollectionItem(page) %}
+
+  <section class="prev-next">
+    <h2 class="visually-hidden">Смотрите ещё:</h2>
+    <div class="container prev-next__container">
+
+      {% if previousPost %}
+        <article class="prev-next__article">
+          <div class="prev-next__image-wrapper">
+            <picture>
+              <source srcset="{{ previousPost.data.images["thumb-webp"] }}" type="image/webp">
+              <img class="prev-next__image" loading="lazy" src="{{ previousPost.data.images["thumb-jpg"] }}" width="248" height="140" alt="{{ previousPost.data.title }}">
+            </picture>
+          </div>
+          <div class="prev-next__text">
+            <span class="prev-next__indicator">НАЗАД</span>
+            <h3 class="prev-next__title">
+              <a class="prev-next__link" href="{{ previousPost.url }}">
+                <span>{{ previousPost.data.title }}</span>
+              </a>
+            </h3>
+          </div>
+        </article>
+      {% endif %}
+      {% if nextPost %}
+        <article class="prev-next__article prev-next__article--reverse">
+          <div class="prev-next__image-wrapper">
+            <picture>
+              <source srcset="{{ nextPost.data.images["thumb-webp"] }}" type="image/webp"><img class="prev-next__image" loading="lazy" src="{{ nextPost.data.images["thumb-jpg"] }}" width="248" height="140" alt="{{ nextPost.data.title }}">
+            </picture>
+          </div>
+          <div class="prev-next__text">
+            <span class="prev-next__indicator">ВПЕРЕД</span>
+            <h3 class="prev-next__title">
+              <a class="prev-next__link" href="{{ nextPost.url }}">
+                <span>{{ nextPost.data.title }}</span>
+              </a>
+            </h3>
+          </div>
+        </article>
+      {% endif %}
+
+    {% endif %}
+  </div>
+</section>

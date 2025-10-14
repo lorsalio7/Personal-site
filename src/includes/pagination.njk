@@ -1,0 +1,10 @@
+<div class="post__buttons">
+  {% if pagination.href.previous %}
+    <a class="button post__button" href="{{ pagination.href.previous }}" title="Назад">Назад</a>
+  {% else %}
+  {% endif %}
+  {% if pagination.href.next %}
+    <a class="button post__button" href="{{ pagination.href.next }}" title="Вперед">Вперед</a>
+  {% else %}
+  {% endif %}
+</div>

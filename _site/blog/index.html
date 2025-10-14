@@ -6,89 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/">
     
-    <title>Блог с полезными статьями по веб-разработке и созданию сайтов</title>
+      <title>Блог с полезными статьями по веб-разработке и созданию сайтов</title>
     
     <link rel="icon" type="image/svg+xml" href="/favicon-light.svg">
 <link rel="icon" type="image/png" href="/favicon-light.png">
+    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM"/>
+<meta name="yandex-verification" content="c0984db1dbcd9786"/>
     
+
+  <link rel="canonical" href="https://sezak.ru/blog/"/>
+
+
+
+    <meta name="generator" content="Eleventy v2.0.1"/>
+
+  
     
-
-<link rel="canonical" href="https://sezak.ru/blog/" />
-
-
-
-    <meta name="generator" content="Jekyll v4.3.2" />
-
-<meta property="og:title" content="Блог с полезными статьями по веб-разработке и созданию сайтов" />
-<meta property="og:url" content="https://sezak.ru/blog" />
-<meta property="og:type" content="website" />
-<meta name="description" content="В этом блоге я делюсь своими знаниями в области веб-разработки, полезными советами, лайфхаками и актуальными трендами для начинающих и профессионалов" />
-<meta property="og:description" content="В этом блоге я делюсь своими знаниями в области веб-разработки, полезными советами, лайфхаками и актуальными трендами для начинающих и профессионалов" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Блог с полезными статьями по веб-разработке и созданию сайтов" />
-
-
-<meta property="og:locale" content="ru_RU" />
-<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова" />
-<meta property="og:type" content="website" />
-
-<meta property="og:image" content="https://sezak.ru/img/imagehome.jpg">
-
-    <meta name="google-site-verification" content="YXRYU27nMluAhepsKBjKjy3SSCwFspOWlm4imLtpuiM" />
-    <meta name="yandex-verification" content="c0984db1dbcd9786" />
+      <meta property="og:title" content="Блог с полезными статьями по веб-разработке и созданию сайтов"/>
     
-    <link rel="stylesheet" href="css/cookieconsent.css">
+  
+  <meta property="og:url" content="https://sezak.ru/blog/"/>
+  <meta property="og:type" content="website"/>
+  <meta name="description" content="В этом блоге я делюсь своими знаниями в области веб-разработки, полезными советами, лайфхаками и актуальными трендами для начинающих и профессионалов"/>
+  <meta property="og:description" content="В этом блоге я делюсь своими знаниями в области веб-разработки, полезными советами, лайфхаками и актуальными трендами для начинающих и профессионалов"/>
+  <meta name="twitter:card" content="summary"/>
+  
     
+      <meta property="twitter:title" content="Блог с полезными статьями по веб-разработке и созданию сайтов"/>
+    
+  
+
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:site_name" content="Сайт-Портфолио html-верстальщика Сергея Закирова"/>
+
+  <meta property="og:image" content="https://sezak.ru/img/imagehome.jpg">
+
+    <script>
+  (function deleteAllSiteDataExceptTheme() {
+    console.log("🧹 Очистка cookies и storage, кроме dark-theme...");
+
+    // --- Удаляем все cookies ---
+    const cookies = document
+      .cookie
+      .split(";");
+    for (let cookie of cookies) {
+      const eqPos = cookie.indexOf("=");
+      const name = eqPos > -1
+        ? cookie
+          .substr(0, eqPos)
+          .trim()
+        : cookie.trim();
+
+      // Удаляем cookie для домена и поддоменов
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=" + window
+        .location
+        .hostname
+        .replace(/^www\./, '') + ";";
+    }
+
+    // --- Сохраняем значение темы, если есть ---
+    let darkThemeValue = null;
+    try {
+      darkThemeValue = localStorage.getItem("dark-theme");
+    } catch (e) {
+      console.warn("Не удалось прочитать dark-theme:", e);
+    }
+
+    // --- Очищаем localStorage ---
+    try {
+      localStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке localStorage:", e);
+    }
+
+    // --- Восстанавливаем dark-theme ---
+    if (darkThemeValue !== null) {
+      try {
+        localStorage.setItem("dark-theme", darkThemeValue);
+      } catch (e) {
+        console.warn("Не удалось восстановить dark-theme:", e);
+      }
+    }
+
+    // --- Очищаем sessionStorage ---
+    try {
+      sessionStorage.clear();
+    } catch (e) {
+      console.warn("Ошибка при очистке sessionStorage:", e);
+    }
+
+    console.log("✅ Очистка завершена (dark-theme сохранён)");
+  })();
+</script>
+    <script>
+  <!-- Скрипт предотвращающий «мигание темы» (FOUC: flash of unstyled content) -->
+(function () {try {var saved = localStorage.getItem("dark-theme");
+if (saved === "true") {document.documentElement.classList.add("dark-theme");}} catch (e) {}})();
+</script>
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
-  <body>
-    
-    <!-- yandex metrika -->
-<script type="text/plain" data-cookie-consent="strictly-necessary" data-category="analytics" data-service="Yandex Metrika">
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-  
-   ym(93403533, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<!-- end of yandex metrika-->
-<noscript>
-  <div>
-    <img src="https://mc.yandex.ru/watch/93403533" style="position:absolute; left:-9999px;" alt="">
-  </div>
-</noscript>
-<span class="overlay"></span>
-    
-    <header class="main-header">
+<body>
+  <header class="main-header">
   <div class="container main-header__container">
     <nav class="main-header__navigation">
-      <a class="site-logo" href="/">
-        <svg class="site-logo__image" width="43" height="48">
-          <use xlink:href="/img/sprite.svg#header-logo"></use>
-        </svg>
-      </a>
+      
+        <a class="site-logo" href="/">
+          <svg class="site-logo__image" width="43" height="48">
+            <use xlink:href="/img/sprite.svg#header-logo"></use>
+          </svg>
+        </a>
+      
       <button class="theme-button" type="button" title="Сменить тему сайта">
         <span class="theme-button__switch-slider"></span>
       </button>
     </nav>
   </div>
 </header>
-    <main class="main">
-      <section class="post post--page">
-        <div class="container post__container">
-          <h1 class="post__title">Все статьи:</h1>
-          <div class="post__list">
-            
+  <main class="main">
+    <section class="post post--page">
+      <div class="container post__container">
+        <h1 class="post__title">Все статьи:</h1>
+        <div class="post__list">
             <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/small-post.jpg" width="436" height="244" alt="Специальные символы html и css">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-09-08-spetsialnye-simvoly-html-i-css/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -102,11 +145,10 @@
     </p>
   </div>
 </article>
-            
-            <article class="post__item post-card">
+  <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/small-post.jpg" width="436" height="244" alt="Как сделать бургер кнопку на css с анимацией">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-16-kak-sdelat-burger-knopku-na-css-s-animatsiey/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -120,11 +162,10 @@
     </p>
   </div>
 </article>
-            
-            <article class="post__item post-card">
+  <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/small-post.jpg" width="436" height="244" alt="Как сделать градиентный текст на css и анимировать его">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-02-kak-sdelat-gradientnyj-tekst-na-css-i-animirovat-ego/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -138,11 +179,10 @@
     </p>
   </div>
 </article>
-            
-            <article class="post__item post-card">
+  <article class="post__item post-card">
   <picture>
     <source srcset="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/small-post.webp" type="image/webp">
-    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/small-post.jpg" width="436" height="244" alt="Как сделать пульсирующую анимацию на HTML и CSS">
+    <img class="post-card__image" loading="lazy" src="images/2024/2024-08-01-kak-sdelat-pulsiruyushhuyu-animaciyu-na-html-i-css/small-post.jpg" width="436" height="244" alt="">
   </picture>
   <div class="post-card__text-content">
     <h3 class="post-card__title">
@@ -156,32 +196,32 @@
     </p>
   </div>
 </article>
-            
-          </div>
-          
-
-
-
 
         </div>
-      </section>
-    </main>
-    <footer class="main-footer">
+        <div class="post__buttons">
+  
+  
+  
+  
+</div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
   <div class="container main-footer__container">
-    <a class="site-logo main-footer__logo" href="/">
-      <svg class="site-logo__image" width="43" height="48">
-        <use xlink:href="/img/sprite.svg#header-logo"></use>
-      </svg>
-    </a>
+    
+      <a class="site-logo main-footer__logo" href="/">
+        <svg class="site-logo__image" width="43" height="48">
+          <use xlink:href="/img/sprite.svg#header-logo"></use>
+        </svg>
+      </a>
+    
     <a href="/services/" class="main-footer__copyright">Услуги</a>
     <p class="main-footer__copyright">&copy; <span class="main-footer__year"></span> sezak.ru все права защищены</p>
-    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://jekyllrb.com/" rel="nofollow noopener" target="_blank">Jekyll</a></p>
+    <p class="main-footer__credits">Созданно на <a class="main-footer__link" href="https://www.11ty.dev/" rel="nofollow noopener" target="_blank">11ty</a>
+    </p>
   </div>
 </footer>
-    
-    <script src="js/cookieconsent.umd.js"></script>
-    <script src="js/cookieconsent-config.js" type="module"></script>
-    
-    <script src="js/script.min.js"></script>
-  </body>
+  <script src="js/script.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,51 @@
+<section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <h2 class="contacts__title">Контакты</h2>
+    <div class="contacts__wrapper">
+      <div class="contacts-item contacts__item">
+        <div class="contacts-item__wrapper">
+          <p class="contacts__subtitle">Поработаем вместе?</p>
+          <p class="contacts__description">Если вам нравятся мои работы, я открыт к любому сотрудничеству</p>
+        </div>
+      </div>
+      <div class="contacts-item contacts__item">
+        <div class="contacts-item__wrapper">
+          <p class="contacts-item__title">Время работы:</p>
+          <p class="contacts-item__row">
+            <span class="contacts-item__days">Пн-Пт:</span>
+            <span class="contacts-item__time">7:00 - 16:00 Мск</span></p>
+          <p class="contacts-item__row">
+            <span class="contacts-item__days">Сб-Вс:</span>
+            <span class="contacts-item__time">Только консультации</span></p>
+          <div class="contacts-list">
+            <p class="contacts-list__item">
+              <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#email-ic"></use>
+              </svg>
+              <a class="contacts-list__link" href="mailto:{{ email }}">{{ email }}</a>
+              <meta itemprop="email" content="{{ email }}">
+            </p>
+            <p class="contacts-list__item">
+              <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#telegram-ic"></use>
+              </svg>
+              <a class="contacts-list__link" itemprop="sameAs" href="{{ telegram }}">Телеграм</a>
+            </p>
+            <p class="contacts-list__item">
+              <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#vk-ic"></use>
+              </svg>
+              <a class="contacts-list__link" itemprop="sameAs" href="{{ vk }}">Вконтакте</a>
+            </p>
+            <p class="contacts-list__item">
+              <svg class="contacts-list__icon" width="22" height="22" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#github-ic"></use>
+              </svg>
+              <a class="contacts-list__link" itemprop="sameAs" href="{{ github }}">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

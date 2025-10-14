@@ -1834,20 +1834,20 @@ body {
   padding-bottom: 20px;
 }
 
-.section-nav {
+.toc__navigation ol {
   margin-top: 0;
   padding-left: 30px;
 }
 
-.toc-entry {
+.toc__navigation li {
   margin-bottom: 20px;
 }
 
-.toc-entry::marker {
+.toc__navigation li::marker {
   color: var(--paragraph-color);
 }
 
-.toc-entry a {
+.toc__navigation a {
   font-size: 18px;
   color: var(--paragraph-color);
   -webkit-transition: color 0.3s ease;
@@ -2524,7 +2524,7 @@ body {
     height: 100%;
   }
 
-  .toc-entry a:hover {
+  .toc__navigation a:hover {
     color: var(--accent-color);
   }
 }

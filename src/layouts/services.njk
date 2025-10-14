@@ -1,0 +1,18 @@
+{% include "top-services.njk" %}
+<body>
+  {% include "header.njk" %}
+  <main class="main">
+    <section class="post post--page">
+      <div class="container post__container">
+        <h1 class="post__title">Последние работы</h1>
+        <div class="post__list">
+          {{ content | safe }}
+        </div>
+        {% include "pagination.njk" %}
+      </div>
+    </section>
+  </main>
+  {% include "footer.njk" %}
+  <script src="js/script.min.js"></script>
+</body>
+</html>

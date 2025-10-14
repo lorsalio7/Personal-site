@@ -1,0 +1,28 @@
+{% include "top-page.njk" %}
+<body>
+  {% include "header.njk" %}
+  <main class="main">
+    <div class="container container--article">
+      <header class="full-article__header">
+        <h1 class="full-article__title">{{ title }}</h1>
+        <p class="full-article__info">
+          <span class="full-article__tag">#{{ tag }} /</span>
+          <time class="full-article__time" datetime="{{ page.date | mapDate }}">{{ page.date | ruDate }}</time>
+        </p>
+        <a class="full-article__category-link" href="/projects/">Портфолио</a>
+      </header>
+      <picture>
+        <source srcset="{{ images["fullpost-webp"] }}" type="image/webp"><img class="full-article__image" src="{{ images["fullpost-jpg"] }}" width="968" height="544" alt="{{ title }}">
+      </picture>
+      <div class="raw-content">
+        {{ content | safe }}
+        <blockquote>ВНИМАНИЕ! Все проекты представленные на данном сайте предназначены исключительно для ознакомления. Использование в коммерческих или любых других целях строго ЗАПРЕЩЕНО.</blockquote>
+      </div>
+    </article>
+  </div>
+  {% include "prev-next.njk" %}
+</main>
+{% include "footer.njk" %}
+<script src="js/script.min.js" defer></script>
+</body>
+</html>

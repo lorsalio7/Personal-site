@@ -1,0 +1,45 @@
+<meta name="generator" content="Eleventy v2.0.1"/>
+{% if page | isHomePage %}
+
+  <meta property="og:title" content="{{ siteTitle }}"/>
+
+  <meta property="og:url" content="{{ siteUrl }}"/>
+  <meta property="og:type" content="website"/>
+  <meta name="description" content="{{ siteDescription }}"/>
+  <meta property="og:description" content="{{ siteDescription }}"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="{{ siteTitle }}"/>
+
+{% else %}
+  {% if pagination and pagination.items %}
+    {% if pagination.pageNumber == 0 %}
+      <meta property="og:title" content="{{ title }}"/>
+    {% else %}
+      <meta property="og:title" content="{{ title }} - Страница {{ pagination.pageNumber + 1 }}"/>
+    {% endif %}
+  {% else %}
+    <meta property="og:title" content="{{ title }}"/>
+  {% endif %}
+  <meta property="og:url" content="{{ siteUrl }}{{ page.url}}"/>
+  <meta property="og:type" content="website"/>
+  <meta name="description" content="{{ description }}"/>
+  <meta property="og:description" content="{{ description }}"/>
+  <meta name="twitter:card" content="summary"/>
+  {% if pagination and pagination.items %}
+    {% if pagination.pageNumber == 0 %}
+      <meta property="twitter:title" content="{{ title }}"/>
+    {% else %}
+      <meta property="twitter:title" content="{{ title }} - Страница {{ pagination.pageNumber + 1 }}"/>
+    {% endif %}
+  {% else %}
+    {# не пагинированная страница (например, пост) — просто показываем заголовок #}
+    <meta property="twitter:title" content="{{ title }}"/>
+  {% endif %}
+{% endif %}
+<meta property="og:locale" content="ru_RU"/>
+<meta property="og:site_name" content="{{ siteTitle }}"/>
+{% if images.imagehome %}
+  <meta property="og:image" content="{{ siteUrl }}/{{ images.imagehome }}">
+{% else %}
+  <meta property="og:image" content="{{ siteUrl }}/{{ siteImagehome }}">
+{% endif %}

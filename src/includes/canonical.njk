@@ -1,0 +1,12 @@
+{% if "/projects/" in page.url %}
+  <link rel="canonical" href="{{ siteUrl }}/projects/"/>
+{% endif %}
+{% if "/blog/" in page.url %}
+  <link rel="canonical" href="{{ siteUrl }}/blog/"/>
+{% endif %}
+{% if pagination and pagination.href and pagination.href.previous %}
+  <link rel="prev" href="{{ siteUrl }}{{ pagination.href.previous }}">
+{% endif %}
+{% if pagination and pagination.href and pagination.href.next %}
+  <link rel="next" href="{{ siteUrl }}{{ pagination.href.next }}">
+{% endif %}

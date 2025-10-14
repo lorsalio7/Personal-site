@@ -1,0 +1,5 @@
+<script>
+  <!-- Скрипт предотвращающий «мигание темы» (FOUC: flash of unstyled content) -->
+(function () {try {var saved = localStorage.getItem("dark-theme");
+if (saved === "true") {document.documentElement.classList.add("dark-theme");}} catch (e) {}})();
+</script>
