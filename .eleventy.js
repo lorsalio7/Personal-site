@@ -91,6 +91,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("telegram", "https://t.me/sezak74")
   eleventyConfig.addGlobalData("vk", "https://vk.com/id614911269")
   eleventyConfig.addGlobalData("github", "https://github.com/lorsalio7")
+  eleventyConfig.addGlobalData("kwork", "https://kwork.ru/user/Sezak")
 
   return {
     dir: {
